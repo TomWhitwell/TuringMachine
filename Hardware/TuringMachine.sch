@@ -12385,7 +12385,7 @@ Use Value for specific type of diode</description>
 <segment>
 <pinref part="EXPANSION" gate="1" pin="9"/>
 <wire x1="129.54" y1="198.12" x2="127" y2="198.12" width="0.1524" layer="91"/>
-<label x="129.54" y="198.12" size="1.778" layer="95"/>
+<label x="129.54" y="198.12" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
@@ -12526,19 +12526,19 @@ Use Value for specific type of diode</description>
 <segment>
 <pinref part="EXPANSION" gate="1" pin="10"/>
 <wire x1="129.54" y1="200.66" x2="127" y2="200.66" width="0.1524" layer="91"/>
-<label x="129.54" y="200.66" size="1.778" layer="95"/>
+<label x="129.54" y="200.66" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="50.8" y1="83.82" x2="50.8" y2="76.2" width="0.1524" layer="91"/>
-<label x="66.04" y="88.9" size="1.778" layer="95" rot="R90"/>
 <pinref part="CLK" gate="G$1" pin="A"/>
+<label x="50.8" y="83.82" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="345.44" y1="83.82" x2="355.6" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="353.06" y1="73.66" x2="355.6" y2="73.66" width="0.1524" layer="91"/>
-<label x="363.22" y="73.66" size="1.778" layer="95"/>
+<label x="363.22" y="73.66" size="1.778" layer="95" xref="yes"/>
 <wire x1="355.6" y1="73.66" x2="363.22" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="355.6" y1="83.82" x2="355.6" y2="73.66" width="0.1524" layer="91"/>
 <junction x="355.6" y="73.66"/>
@@ -12550,11 +12550,11 @@ Use Value for specific type of diode</description>
 <segment>
 <pinref part="EXPANSION" gate="1" pin="5"/>
 <wire x1="129.54" y1="187.96" x2="127" y2="187.96" width="0.1524" layer="91"/>
-<label x="129.54" y="187.96" size="1.778" layer="95"/>
+<label x="129.54" y="187.96" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="88.9" y1="76.2" x2="88.9" y2="73.66" width="0.1524" layer="91"/>
-<label x="88.9" y="76.2" size="1.778" layer="95" rot="R90"/>
+<label x="88.9" y="76.2" size="1.778" layer="95" rot="R90" xref="yes"/>
 <pinref part="5" gate="G$1" pin="A"/>
 </segment>
 <segment>
@@ -12567,11 +12567,11 @@ Use Value for specific type of diode</description>
 <segment>
 <pinref part="EXPANSION" gate="1" pin="1"/>
 <wire x1="129.54" y1="177.8" x2="127" y2="177.8" width="0.1524" layer="91"/>
-<label x="129.54" y="177.8" size="1.778" layer="95"/>
+<label x="129.54" y="177.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="109.22" y1="76.2" x2="109.22" y2="73.66" width="0.1524" layer="91"/>
-<label x="109.22" y="76.2" size="1.778" layer="95" rot="R90"/>
+<label x="109.22" y="76.2" size="1.778" layer="95" rot="R90" xref="yes"/>
 <pinref part="1" gate="G$1" pin="A"/>
 </segment>
 <segment>
@@ -12584,11 +12584,11 @@ Use Value for specific type of diode</description>
 <segment>
 <pinref part="EXPANSION" gate="1" pin="8"/>
 <wire x1="129.54" y1="195.58" x2="127" y2="195.58" width="0.1524" layer="91"/>
-<label x="129.54" y="195.58" size="1.778" layer="95"/>
+<label x="129.54" y="195.58" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="73.66" y1="93.98" x2="73.66" y2="91.44" width="0.1524" layer="91"/>
-<label x="73.66" y="93.98" size="1.778" layer="95" rot="R90"/>
+<label x="73.66" y="93.98" size="1.778" layer="95" rot="R90" xref="yes"/>
 <pinref part="8" gate="G$1" pin="A"/>
 </segment>
 <segment>
@@ -12601,11 +12601,11 @@ Use Value for specific type of diode</description>
 <segment>
 <pinref part="EXPANSION" gate="1" pin="7"/>
 <wire x1="129.54" y1="193.04" x2="127" y2="193.04" width="0.1524" layer="91"/>
-<label x="129.54" y="193.04" size="1.778" layer="95"/>
+<label x="129.54" y="193.04" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="78.74" y1="76.2" x2="78.74" y2="73.66" width="0.1524" layer="91"/>
-<label x="78.74" y="76.2" size="1.778" layer="95" rot="R90"/>
+<label x="78.74" y="76.2" size="1.778" layer="95" rot="R90" xref="yes"/>
 <pinref part="7" gate="G$1" pin="A"/>
 </segment>
 <segment>
@@ -12618,11 +12618,11 @@ Use Value for specific type of diode</description>
 <segment>
 <pinref part="EXPANSION" gate="1" pin="6"/>
 <wire x1="129.54" y1="190.5" x2="127" y2="190.5" width="0.1524" layer="91"/>
-<label x="129.54" y="190.5" size="1.778" layer="95"/>
+<label x="129.54" y="190.5" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="83.82" y1="93.98" x2="83.82" y2="91.44" width="0.1524" layer="91"/>
-<label x="83.82" y="93.98" size="1.778" layer="95" rot="R90"/>
+<label x="83.82" y="93.98" size="1.778" layer="95" rot="R90" xref="yes"/>
 <pinref part="6" gate="G$1" pin="A"/>
 </segment>
 <segment>
@@ -12635,11 +12635,11 @@ Use Value for specific type of diode</description>
 <segment>
 <pinref part="EXPANSION" gate="1" pin="4"/>
 <wire x1="129.54" y1="185.42" x2="127" y2="185.42" width="0.1524" layer="91"/>
-<label x="129.54" y="185.42" size="1.778" layer="95"/>
+<label x="129.54" y="185.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="93.98" y1="93.98" x2="93.98" y2="91.44" width="0.1524" layer="91"/>
-<label x="93.98" y="93.98" size="1.778" layer="95" rot="R90"/>
+<label x="93.98" y="93.98" size="1.778" layer="95" rot="R90" xref="yes"/>
 <pinref part="4" gate="G$1" pin="A"/>
 </segment>
 <segment>
@@ -12652,11 +12652,11 @@ Use Value for specific type of diode</description>
 <segment>
 <pinref part="EXPANSION" gate="1" pin="3"/>
 <wire x1="129.54" y1="182.88" x2="127" y2="182.88" width="0.1524" layer="91"/>
-<label x="129.54" y="182.88" size="1.778" layer="95"/>
+<label x="129.54" y="182.88" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="99.06" y1="76.2" x2="99.06" y2="73.66" width="0.1524" layer="91"/>
-<label x="99.06" y="76.2" size="1.778" layer="95" rot="R90"/>
+<label x="99.06" y="76.2" size="1.778" layer="95" rot="R90" xref="yes"/>
 <pinref part="3" gate="G$1" pin="A"/>
 </segment>
 <segment>
@@ -12669,11 +12669,11 @@ Use Value for specific type of diode</description>
 <segment>
 <pinref part="EXPANSION" gate="1" pin="2"/>
 <wire x1="129.54" y1="180.34" x2="127" y2="180.34" width="0.1524" layer="91"/>
-<label x="129.54" y="180.34" size="1.778" layer="95"/>
+<label x="129.54" y="180.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="104.14" y1="93.98" x2="104.14" y2="91.44" width="0.1524" layer="91"/>
-<label x="104.14" y="93.98" size="1.778" layer="95" rot="R90"/>
+<label x="104.14" y="93.98" size="1.778" layer="95" rot="R90" xref="yes"/>
 <pinref part="2" gate="G$1" pin="A"/>
 </segment>
 <segment>
@@ -12785,7 +12785,7 @@ Use Value for specific type of diode</description>
 <wire x1="246.38" y1="83.82" x2="251.46" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="76.2" x2="246.38" y2="83.82" width="0.1524" layer="91"/>
 <junction x="246.38" y="83.82"/>
-<label x="251.46" y="83.82" size="1.778" layer="95"/>
+<label x="251.46" y="83.82" size="1.778" layer="95" xref="yes"/>
 <pinref part="C11" gate="G$1" pin="1"/>
 <wire x1="241.3" y1="83.82" x2="238.76" y2="83.82" width="0.1524" layer="91"/>
 </segment>
