@@ -5,9 +5,9 @@ Potential rev.4 turing machine boards
 new 
 - 891 wires 
 - 277 pads 
-- 26 vias 
+- 25 vias 
 - 61 signals 
-- wires per via: 34.3
+- wires per via: 35.6
 
 
 OLD 
