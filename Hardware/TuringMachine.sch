@@ -11373,15 +11373,15 @@ Use Value for specific type of diode</description>
 <wire x1="-8.89" y1="-1.27" x2="11.43" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="-10.7696" y1="0.6096" x2="-9.5504" y2="-0.6096" width="0.1524" layer="51"/>
 <wire x1="-10.7696" y1="-0.6096" x2="-9.5504" y2="0.6096" width="0.1524" layer="51"/>
-<pad name="1" x="-10.16" y="0" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-7.62" y="0" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-5.08" y="0" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="-2.54" y="0" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="0" y="0" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="2.54" y="0" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="5.08" y="0" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="7.62" y="0" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="10.16" y="0" drill="0.8128" shape="long" rot="R90"/>
+<pad name="1" x="-10.16" y="0" drill="0.8128" rot="R90"/>
+<pad name="2" x="-7.62" y="0" drill="0.8128" rot="R90"/>
+<pad name="3" x="-5.08" y="0" drill="0.8128" rot="R90"/>
+<pad name="4" x="-2.54" y="0" drill="0.8128" rot="R90"/>
+<pad name="5" x="0" y="0" drill="0.8128" rot="R90"/>
+<pad name="6" x="2.54" y="0" drill="0.8128" rot="R90"/>
+<pad name="7" x="5.08" y="0" drill="0.8128" rot="R90"/>
+<pad name="8" x="7.62" y="0" drill="0.8128" rot="R90"/>
+<pad name="9" x="10.16" y="0" drill="0.8128" rot="R90"/>
 <text x="-8.89" y="-3.175" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-8.89" y="1.905" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 </package>
@@ -11443,7 +11443,7 @@ Use Value for specific type of diode</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.2032" drill="0">
+<class number="0" name="default" width="0.254" drill="0">
 </class>
 <class number="1" name="power" width="0.4064" drill="0">
 </class>
