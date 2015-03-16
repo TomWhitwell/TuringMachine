@@ -12122,9 +12122,9 @@ Use Value for specific type of diode</description>
 <label x="33.02" y="195.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R29" gate="G$1" pin="2"/>
+<pinref part="R29" gate="G$1" pin="1"/>
 <pinref part="P+13" gate="+12V" pin="+12V"/>
-<wire x1="142.24" y1="91.44" x2="142.24" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="91.44" x2="142.24" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+3" gate="+12V" pin="+12V"/>
@@ -12574,11 +12574,11 @@ Use Value for specific type of diode</description>
 <net name="N$16" class="0">
 <segment>
 <pinref part="T1" gate="G1" pin="E"/>
-<pinref part="R29" gate="G$1" pin="1"/>
-<wire x1="142.24" y1="76.2" x2="142.24" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="R29" gate="G$1" pin="2"/>
+<wire x1="142.24" y1="76.2" x2="142.24" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="1"/>
-<wire x1="154.94" y1="78.74" x2="142.24" y2="78.74" width="0.1524" layer="91"/>
-<junction x="142.24" y="78.74"/>
+<wire x1="154.94" y1="78.74" x2="142.24" y2="88.9" width="0.1524" layer="91"/>
+<junction x="142.24" y="88.9"/>
 </segment>
 </net>
 <net name="N$20" class="0">

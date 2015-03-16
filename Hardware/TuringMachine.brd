@@ -2045,8 +2045,8 @@ design rules under a new name.</description>
 <element name="R28" library="TomW" package="0207/7" value="1.6k" x="43.18" y="22.225" rot="R90"/>
 <element name="C9" library="TomW" package="C050-024X044" value="10n" x="59.055" y="48.26"/>
 <element name="T1" library="transistor" package="TO92" value="2N3904" x="30.48" y="13.97" rot="R180"/>
-<element name="R29" library="TomW" package="0207/7" value="100k" x="35.56" y="10.16"/>
-<element name="C10" library="rcl" package="C050-035X075" value="0.47uf" x="38.1" y="13.97"/>
+<element name="R29" library="TomW" package="0207/7" value="100k" x="30.48" y="5.08" rot="R90"/>
+<element name="C10" library="rcl" package="C050-035X075" value="0.47uf" x="36.83" y="10.16"/>
 <element name="R30" library="TomW" package="0207/7" value="10k" x="45.72" y="8.89"/>
 <element name="R31" library="TomW" package="0207/7" value="470k" x="45.72" y="11.43"/>
 <element name="R32" library="TomW" package="0207/7" value="10k" x="55.88" y="19.05"/>
@@ -2112,7 +2112,7 @@ design rules under a new name.</description>
 <element name="VR2" library="MusicThingModular" package="9MM_SNAP-IN_POT" value="" x="77.47" y="27.305" rot="R270"/>
 <element name="VR3" library="MusicThingModular" package="9MM_SNAP-IN_POT" value="" x="22.86" y="6.35" locked="yes" rot="R270"/>
 <element name="C17" library="TomW" package="C050-024X044" value="1n" x="71.12" y="45.72" rot="R90"/>
-<element name="TL431" library="TomW" package="TO92-CLP" value="" x="35.56" y="19.05" rot="R180"/>
+<element name="TL431" library="TomW" package="TO92-CLP" value="" x="46.99" y="20.32" rot="R270"/>
 <element name="R20" library="TomW" package="0207/7" value="3.3k" x="40.64" y="22.225" rot="R90"/>
 <element name="C18" library="rcl" package="C050-035X075" value="0.47uf" x="45.72" y="15.24"/>
 <element name="IC6" library="TomW" package="DIL08" value="TL072P" x="69.85" y="6.35" rot="R270"/>
@@ -2125,7 +2125,7 @@ design rules under a new name.</description>
 <contactref element="POWER" pad="9"/>
 <contactref element="POWER" pad="10"/>
 <contactref element="U$2" pad="13"/>
-<contactref element="R29" pad="2"/>
+<contactref element="R29" pad="1"/>
 <contactref element="R3" pad="2"/>
 <contactref element="WRITE" pad="1"/>
 <contactref element="R24" pad="1"/>
@@ -2163,18 +2163,20 @@ design rules under a new name.</description>
 <wire x1="76.2" y1="20.32" x2="74.93" y2="19.05" width="0.254" layer="1"/>
 <wire x1="74.93" y1="19.05" x2="74.93" y2="11.43" width="0.254" layer="1"/>
 <wire x1="74.93" y1="11.43" x2="73.66" y2="10.16" width="0.254" layer="1"/>
+<wire x1="30.48" y1="1.27" x2="30.48" y2="2.54" width="0.254" layer="1"/>
+<wire x1="30.48" y1="2.54" x2="31.75" y2="3.81" width="0.254" layer="1"/>
+<wire x1="31.75" y1="3.81" x2="34.671" y2="3.81" width="0.254" layer="1"/>
+<wire x1="37.465" y1="22.225" x2="37.465" y2="6.604" width="0.4064" layer="1"/>
+<wire x1="37.465" y1="6.604" x2="34.671" y2="3.81" width="0.4064" layer="1"/>
 <wire x1="81.28" y1="46.99" x2="93.98" y2="46.99" width="0" layer="19" extent="1-1"/>
 <wire x1="76.2" y1="20.32" x2="76.2" y2="38.1" width="0" layer="19" extent="1-1"/>
 <wire x1="66.04" y1="20.32" x2="74.93" y2="19.05" width="0" layer="19" extent="1-1"/>
 <wire x1="40.64" y1="26.035" x2="57.15" y2="19.05" width="0" layer="19" extent="1-1"/>
-<wire x1="39.37" y1="10.16" x2="37.465" y2="22.225" width="0" layer="19" extent="1-1"/>
 <wire x1="23.495" y1="24.765" x2="37.465" y2="24.765" width="0" layer="19" extent="1-1"/>
 <wire x1="30.48" y1="45.72" x2="37.465" y2="24.765" width="0" layer="19" extent="1-1"/>
 <wire x1="30.48" y1="56.515" x2="30.48" y2="45.72" width="0" layer="19" extent="1-1"/>
 <wire x1="21.59" y1="53.975" x2="30.48" y2="56.515" width="0" layer="19" extent="1-1"/>
 <wire x1="39.37" y1="52.07" x2="30.48" y2="56.515" width="0" layer="19" extent="1-1"/>
-<wire x1="34.671" y1="3.81" x2="34.671" y2="5.461" width="0.254" layer="1"/>
-<wire x1="34.671" y1="5.461" x2="39.37" y2="10.16" width="0.254" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="CLOCK" pad="P$3"/>
@@ -2413,15 +2415,18 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$16">
 <contactref element="T1" pad="3"/>
-<contactref element="R29" pad="1"/>
+<contactref element="R29" pad="2"/>
 <contactref element="C10" pad="1"/>
-<wire x1="31.75" y1="13.97" x2="31.75" y2="10.16" width="0.254" layer="1"/>
-<wire x1="31.75" y1="13.97" x2="35.56" y2="13.97" width="0.254" layer="1"/>
+<wire x1="34.29" y1="10.16" x2="31.75" y2="10.16" width="0.254" layer="1"/>
+<wire x1="31.75" y1="10.16" x2="30.48" y2="8.89" width="0.254" layer="1"/>
+<wire x1="31.75" y1="13.97" x2="33.02" y2="13.97" width="0.254" layer="1"/>
+<wire x1="33.02" y1="13.97" x2="34.29" y2="12.7" width="0.254" layer="1"/>
+<wire x1="34.29" y1="12.7" x2="34.29" y2="10.16" width="0.254" layer="1"/>
 </signal>
 <signal name="N$20">
 <contactref element="C10" pad="2"/>
 <contactref element="R30" pad="1"/>
-<wire x1="40.64" y1="13.97" x2="40.64" y2="10.16" width="0.254" layer="1"/>
+<wire x1="39.37" y1="10.16" x2="40.64" y2="10.16" width="0.254" layer="1"/>
 <wire x1="40.64" y1="10.16" x2="41.91" y2="8.89" width="0.254" layer="1"/>
 </signal>
 <signal name="N$21">
@@ -2809,10 +2814,9 @@ design rules under a new name.</description>
 <contactref element="R28" pad="1"/>
 <contactref element="R20" pad="1"/>
 <wire x1="43.18" y1="18.415" x2="40.64" y2="18.415" width="0.4064" layer="1"/>
-<wire x1="40.64" y1="18.415" x2="38.735" y2="18.415" width="0.4064" layer="1"/>
-<wire x1="38.735" y1="18.415" x2="38.1" y2="19.05" width="0.4064" layer="1"/>
-<wire x1="38.1" y1="19.05" x2="36.83" y2="19.05" width="0.4064" layer="1"/>
-<wire x1="36.83" y1="19.05" x2="34.29" y2="19.05" width="0.4064" layer="1"/>
+<wire x1="46.99" y1="19.05" x2="43.815" y2="19.05" width="0.254" layer="1"/>
+<wire x1="43.815" y1="19.05" x2="43.18" y2="18.415" width="0.254" layer="1"/>
+<wire x1="46.99" y1="21.59" x2="46.99" y2="19.05" width="0.254" layer="1"/>
 </signal>
 <signal name="N$9">
 <contactref element="C18" pad="1"/>
