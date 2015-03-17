@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -12290,14 +12290,14 @@ Use Value for specific type of diode</description>
 <wire x1="309.88" y1="68.58" x2="309.88" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="R9" gate="G$1" pin="2"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="330.2" y1="48.26" x2="330.2" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="330.2" y1="50.8" x2="330.2" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="50.8" x2="330.2" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="330.2" y1="50.8" x2="345.44" y2="50.8" width="0.1524" layer="91"/>
 <junction x="330.2" y="50.8"/>
-<pinref part="C16" gate="G$1" pin="1"/>
-<wire x1="345.44" y1="50.8" x2="345.44" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="C16" gate="G$1" pin="2"/>
+<wire x1="345.44" y1="50.8" x2="345.44" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R12" gate="G$1" pin="1"/>
@@ -12662,18 +12662,18 @@ Use Value for specific type of diode</description>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="330.2" y1="86.36" x2="330.2" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="B" pin="-IN"/>
 <wire x1="330.2" y1="71.12" x2="330.2" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="330.2" y1="66.04" x2="330.2" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="66.04" x2="330.2" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="332.74" y1="71.12" x2="330.2" y2="71.12" width="0.1524" layer="91"/>
 <junction x="330.2" y="71.12"/>
 <wire x1="330.2" y1="66.04" x2="345.44" y2="66.04" width="0.1524" layer="91"/>
 <junction x="330.2" y="66.04"/>
-<pinref part="C16" gate="G$1" pin="2"/>
-<wire x1="345.44" y1="66.04" x2="345.44" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="C16" gate="G$1" pin="1"/>
+<wire x1="345.44" y1="66.04" x2="345.44" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
