@@ -2,7 +2,12 @@
 Potential rev.4 turing machine boards
 
 
-new 
+Proto 1 
+- 1172 wires (!)
+- 285 pads 
+- 24 vias 
+
+Progress 
 - 891 wires 
 - 277 pads 
 - 25 vias 
