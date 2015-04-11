@@ -11406,7 +11406,7 @@ Use Value for specific type of diode</description>
 <part name="R4" library="TomW" deviceset="R-EU_" device="0207/7" value="100k"/>
 <part name="P+1" library="supply2" deviceset="+12V" device=""/>
 <part name="CV_IN" library="MusicThingModular" deviceset="THONKICONN" device=""/>
-<part name="R5" library="TomW" deviceset="R-EU_" device="0207/7" value="50k"/>
+<part name="R5" library="TomW" deviceset="R-EU_" device="0207/7" value="51k"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="R6" library="TomW" deviceset="R-EU_" device="0207/7" value="150k"/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
