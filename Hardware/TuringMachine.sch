@@ -11369,7 +11369,7 @@ Use Value for specific type of diode</description>
 <part name="R30" library="TomW" deviceset="R-EU_" device="0207/7" value="10k"/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
 <part name="R31" library="TomW" deviceset="R-EU_" device="0207/7" value="470k"/>
-<part name="R32" library="TomW" deviceset="R-EU_" device="0207/7" value="10k"/>
+<part name="R32" library="TomW" deviceset="R-EU_" device="0207/7" value="1k"/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
 <part name="NOISE-OUT" library="MusicThingModular" deviceset="THONKICONN" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
@@ -11408,7 +11408,7 @@ Use Value for specific type of diode</description>
 <part name="CV_IN" library="MusicThingModular" deviceset="THONKICONN" device=""/>
 <part name="R5" library="TomW" deviceset="R-EU_" device="0207/7" value="51k"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
-<part name="R6" library="TomW" deviceset="R-EU_" device="0207/7" value="150k"/>
+<part name="R6" library="TomW" deviceset="R-EU_" device="0207/7" value="47k"/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="CV_OUT" library="MusicThingModular" deviceset="THONKICONN" device=""/>
 <part name="C13" library="TomW" deviceset="C-EU" device="050-024X044" value="100n"/>
