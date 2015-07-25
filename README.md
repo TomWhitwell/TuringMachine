@@ -1,6 +1,17 @@
 # TuringMachine
 Potential rev.4 turing machine boards
 
+Changelog  
+- Rotary length switch 
+- Improved clock input 
+- Noise level trimmer & reduced voltage in noise circuit to make circuit more robust with different noise transistors 
+- Larger board (in same HP) = easier layout 
+- 2 x transistors & resistors removed, replaced by spare 4016 gates used as inverters 
+- Compatible with old backpacks/expanders 
+
+
+
+
 
 Proto 1 
 - 1172 wires (!)
