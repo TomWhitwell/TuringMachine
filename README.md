@@ -9,7 +9,8 @@ Changelog
 - 2 x transistors & resistors removed, replaced by spare 4016 gates used as inverters 
 - Compatible with old backpacks/expanders 
 
-
+- 72ma +12v
+- old - 43ma or 63ma 
 
 
 
