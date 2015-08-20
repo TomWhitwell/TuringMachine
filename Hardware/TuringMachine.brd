@@ -2130,7 +2130,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="IC2" library="40xx" package="DIL16" value="4015" x="19.05" y="76.2" rot="R180"/>
+<element name="SHIFTREG_EXT" library="40xx" package="DIL16" value="4015" x="19.05" y="76.2" rot="R180"/>
 <element name="CLOCK" library="MusicThingModular" package="THONKICONN" value="THONKICONN" x="6.35" y="43.815" locked="yes" rot="R90"/>
 <element name="R2" library="TomW" package="0207/7" value="15k" x="5.08" y="37.465"/>
 <element name="R10" library="TomW" package="0207/7" value="100k" x="15.875" y="35.56" rot="R180"/>
@@ -2138,7 +2138,7 @@ design rules under a new name.</description>
 <element name="R12" library="TomW" package="0207/7" value="10k" x="91.44" y="25.4"/>
 <element name="R8" library="TomW" package="0207/7" value="10k" x="97.79" y="43.18" rot="R90"/>
 <element name="C1" library="TomW" package="C050-024X044" value="1n" x="100.33" y="44.45" rot="R90"/>
-<element name="IC3" library="40xx" package="DIL16" value="4015" x="92.71" y="72.39" rot="R180"/>
+<element name="SHIFTREG_MAIN" library="40xx" package="DIL16" value="4015" x="92.71" y="72.39" rot="R180"/>
 <element name="R14" library="TomW" package="0207/7" value="10k" x="15.875" y="40.64"/>
 <element name="R15" library="TomW" package="0207/7" value="10k" x="34.29" y="34.29" rot="R90"/>
 <element name="R16" library="TomW" package="0207/7" value="10k" x="99.06" y="6.35" rot="R90"/>
@@ -2188,7 +2188,7 @@ design rules under a new name.</description>
 <element name="R19" library="TomW" package="0207/7" value="1k" x="5.715" y="12.065"/>
 <element name="C11" library="rcl" package="C050-035X075" value="0.47uf" x="48.26" y="7.62" rot="R90"/>
 <element name="VR1" library="MusicThingModular" package="BOURNS_3362P_TRIMMER" value="1m" x="59.69" y="3.81"/>
-<element name="U$1" library="TomW" package="ALPS-SRBV" value="ALPS-SRBV" x="44.45" y="37.465"/>
+<element name="LENGTH" library="TomW" package="ALPS-SRBV" value="ALPS-SRBV" x="44.45" y="37.465"/>
 <element name="CLK" library="TomW" package="LED3MM" value="" x="17.78" y="45.085" rot="R180"/>
 <element name="7" library="TomW" package="LED3MM" value="" x="105.156" y="40.64" rot="R90"/>
 <element name="8" library="TomW" package="LED3MM" value="" x="105.156" y="46.99" locked="yes" rot="R90"/>
@@ -2215,10 +2215,10 @@ design rules under a new name.</description>
 <element name="IC1" library="TomW" package="DIL08" value="TL072P" x="59.69" y="12.7" rot="R270"/>
 <element name="IC7" library="TomW" package="DIL08" value="TL072P" x="77.47" y="43.18" rot="R270"/>
 <element name="C12" library="TomW" package="C050-024X044" value="1n" x="68.58" y="11.43" rot="R90"/>
-<element name="IC4" library="40xx" package="DIL14" value="4081" x="50.8" y="59.69" rot="R180"/>
-<element name="IC8" library="40xx" package="DIL14" value="4081" x="66.04" y="82.55" rot="R180"/>
-<element name="IC9" library="40xx" package="DIL16" value="4050" x="90.17" y="85.09" rot="R180"/>
-<element name="IC10" library="40xx" package="DIL16" value="4050" x="90.17" y="93.98" rot="R180"/>
+<element name="AND_1" library="40xx" package="DIL14" value="4081" x="50.8" y="59.69" rot="R180"/>
+<element name="AND_2" library="40xx" package="DIL14" value="4081" x="66.04" y="82.55" rot="R180"/>
+<element name="BUFFER1" library="40xx" package="DIL16" value="4050" x="90.17" y="85.09" rot="R180"/>
+<element name="BUFFER2" library="40xx" package="DIL16" value="4050" x="90.17" y="93.98" rot="R180"/>
 <element name="GATES" library="con-lstb" package="MA08-2" value="" x="96.52" y="55.88">
 <attribute name="OC_NEWARK" value="unknown" x="96.52" y="13.97" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="96.52" y="13.97" size="1.778" layer="27" display="off"/>
@@ -2258,8 +2258,8 @@ design rules under a new name.</description>
 <contactref element="R20" pad="2"/>
 <contactref element="C7" pad="1"/>
 <contactref element="C13" pad="1"/>
-<contactref element="IC2" pad="16"/>
-<contactref element="IC3" pad="16"/>
+<contactref element="SHIFTREG_EXT" pad="16"/>
+<contactref element="SHIFTREG_MAIN" pad="16"/>
 <contactref element="IC1" pad="8"/>
 <contactref element="IC7" pad="8"/>
 <contactref element="IC5" pad="14"/>
@@ -2303,10 +2303,10 @@ design rules under a new name.</description>
 <wire x1="84.455" y1="36.83" x2="81.28" y2="44.45" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CLOCKIN">
-<contactref element="IC3" pad="9"/>
-<contactref element="IC3" pad="1"/>
-<contactref element="IC2" pad="9"/>
-<contactref element="IC2" pad="1"/>
+<contactref element="SHIFTREG_MAIN" pad="9"/>
+<contactref element="SHIFTREG_MAIN" pad="1"/>
+<contactref element="SHIFTREG_EXT" pad="9"/>
+<contactref element="SHIFTREG_EXT" pad="1"/>
 <contactref element="R7" pad="2"/>
 <contactref element="D2" pad="C"/>
 <contactref element="R12" pad="2"/>
@@ -2320,27 +2320,27 @@ design rules under a new name.</description>
 <wire x1="19.05" y1="45.085" x2="10.16" y2="72.39" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="STEP_16">
-<contactref element="U$1" pad="H"/>
-<contactref element="IC2" pad="2"/>
+<contactref element="LENGTH" pad="H"/>
+<contactref element="SHIFTREG_EXT" pad="2"/>
 <wire x1="25.4" y1="80.01" x2="46.95" y2="46.615" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B5">
-<contactref element="IC3" pad="10"/>
+<contactref element="SHIFTREG_MAIN" pad="10"/>
 <contactref element="R8" pad="1"/>
 <contactref element="U$2" pad="9"/>
 <contactref element="5" pad="A"/>
-<contactref element="U$1" pad="C"/>
+<contactref element="LENGTH" pad="C"/>
 <wire x1="97.79" y1="39.37" x2="86.36" y2="68.58" width="0" layer="19" extent="1-1"/>
 <wire x1="105.156" y1="26.67" x2="97.79" y2="39.37" width="0" layer="19" extent="1-1"/>
 <wire x1="60.325" y1="27.94" x2="97.79" y2="39.37" width="0" layer="19" extent="1-1"/>
 <wire x1="41.95" y1="28.315" x2="60.325" y2="27.94" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B1">
-<contactref element="IC3" pad="2"/>
+<contactref element="SHIFTREG_MAIN" pad="2"/>
 <contactref element="R14" pad="2"/>
 <contactref element="U$2" pad="5"/>
 <contactref element="1" pad="A"/>
-<contactref element="U$1" pad="F"/>
+<contactref element="LENGTH" pad="F"/>
 <wire x1="52.705" y1="35.56" x2="99.06" y2="76.2" width="0" layer="19" extent="1-1"/>
 <wire x1="41.95" y1="46.615" x2="52.705" y2="35.56" width="0" layer="19" extent="1-1"/>
 <wire x1="19.685" y1="40.64" x2="41.95" y2="46.615" width="0" layer="19" extent="1-1"/>
@@ -2348,21 +2348,13 @@ design rules under a new name.</description>
 </signal>
 <signal name="-12V" class="1">
 <contactref element="R35" pad="1"/>
-<contactref element="PULSES" pad="11"/>
-<contactref element="PULSES" pad="12"/>
-<contactref element="GATES" pad="11"/>
-<contactref element="GATES" pad="12"/>
-<wire x1="100.33" y1="54.61" x2="100.33" y2="57.15" width="0" layer="19" extent="1-1"/>
-<wire x1="78.74" y1="57.15" x2="100.33" y2="57.15" width="0" layer="19" extent="1-1"/>
-<wire x1="78.74" y1="54.61" x2="78.74" y2="57.15" width="0" layer="19" extent="1-1"/>
-<wire x1="73.66" y1="13.97" x2="78.74" y2="54.61" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND" class="2">
-<contactref element="IC3" pad="6"/>
-<contactref element="IC2" pad="14"/>
-<contactref element="IC2" pad="6"/>
+<contactref element="SHIFTREG_MAIN" pad="6"/>
+<contactref element="SHIFTREG_EXT" pad="14"/>
+<contactref element="SHIFTREG_EXT" pad="6"/>
 <contactref element="C4" pad="1"/>
-<contactref element="IC3" pad="14"/>
+<contactref element="SHIFTREG_MAIN" pad="14"/>
 <contactref element="C1" pad="1"/>
 <contactref element="C2" pad="2"/>
 <contactref element="C3" pad="1"/>
@@ -2458,21 +2450,21 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$10">
 <contactref element="R8" pad="2"/>
-<contactref element="IC3" pad="15"/>
+<contactref element="SHIFTREG_MAIN" pad="15"/>
 <contactref element="C1" pad="2"/>
 <wire x1="97.79" y1="46.99" x2="100.33" y2="46.99" width="0" layer="19" extent="1-1"/>
 <wire x1="99.06" y1="68.58" x2="97.79" y2="46.99" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$14">
-<contactref element="IC2" pad="10"/>
+<contactref element="SHIFTREG_EXT" pad="10"/>
 <contactref element="R15" pad="1"/>
 <wire x1="12.7" y1="72.39" x2="34.29" y2="30.48" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="STEP_12">
 <contactref element="R15" pad="2"/>
-<contactref element="IC2" pad="15"/>
+<contactref element="SHIFTREG_EXT" pad="15"/>
 <contactref element="C3" pad="2"/>
-<contactref element="U$1" pad="G"/>
+<contactref element="LENGTH" pad="G"/>
 <wire x1="34.29" y1="45.72" x2="44.45" y2="46.615" width="0" layer="19" extent="1-1"/>
 <wire x1="25.4" y1="72.39" x2="34.29" y2="45.72" width="0" layer="19" extent="1-1"/>
 <wire x1="34.29" y1="38.1" x2="25.4" y2="72.39" width="0" layer="19" extent="1-1"/>
@@ -2487,50 +2479,50 @@ design rules under a new name.</description>
 <wire x1="71.12" y1="31.75" x2="74.93" y2="36.83" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B8">
-<contactref element="IC3" pad="5"/>
+<contactref element="SHIFTREG_MAIN" pad="5"/>
 <contactref element="U$2" pad="12"/>
 <contactref element="8" pad="A"/>
 <wire x1="105.156" y1="45.72" x2="91.44" y2="76.2" width="0" layer="19" extent="1-1"/>
 <wire x1="60.325" y1="35.56" x2="105.156" y2="45.72" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B7">
-<contactref element="IC3" pad="4"/>
+<contactref element="SHIFTREG_MAIN" pad="4"/>
 <contactref element="U$2" pad="11"/>
 <contactref element="7" pad="A"/>
-<contactref element="U$1" pad="A"/>
+<contactref element="LENGTH" pad="A"/>
 <wire x1="105.156" y1="39.37" x2="93.98" y2="76.2" width="0" layer="19" extent="1-1"/>
 <wire x1="60.325" y1="33.02" x2="105.156" y2="39.37" width="0" layer="19" extent="1-1"/>
 <wire x1="46.95" y1="28.315" x2="60.325" y2="33.02" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B6">
-<contactref element="IC3" pad="3"/>
+<contactref element="SHIFTREG_MAIN" pad="3"/>
 <contactref element="U$2" pad="10"/>
 <contactref element="6" pad="A"/>
-<contactref element="U$1" pad="B"/>
+<contactref element="LENGTH" pad="B"/>
 <wire x1="105.156" y1="33.02" x2="96.52" y2="76.2" width="0" layer="19" extent="1-1"/>
 <wire x1="60.325" y1="30.48" x2="105.156" y2="33.02" width="0" layer="19" extent="1-1"/>
 <wire x1="44.45" y1="28.315" x2="60.325" y2="30.48" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B4">
-<contactref element="IC3" pad="13"/>
+<contactref element="SHIFTREG_MAIN" pad="13"/>
 <contactref element="U$2" pad="8"/>
 <contactref element="4" pad="A"/>
-<contactref element="U$1" pad="D"/>
+<contactref element="LENGTH" pad="D"/>
 <wire x1="105.156" y1="20.32" x2="93.98" y2="68.58" width="0" layer="19" extent="1-1"/>
 <wire x1="52.705" y1="27.94" x2="105.156" y2="20.32" width="0" layer="19" extent="1-1"/>
 <wire x1="39.45" y1="28.315" x2="52.705" y2="27.94" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B3">
-<contactref element="IC3" pad="12"/>
+<contactref element="SHIFTREG_MAIN" pad="12"/>
 <contactref element="U$2" pad="7"/>
 <contactref element="3" pad="A"/>
-<contactref element="U$1" pad="E"/>
+<contactref element="LENGTH" pad="E"/>
 <wire x1="52.705" y1="30.48" x2="91.44" y2="68.58" width="0" layer="19" extent="1-1"/>
 <wire x1="39.45" y1="46.615" x2="52.705" y2="30.48" width="0" layer="19" extent="1-1"/>
 <wire x1="105.156" y1="13.97" x2="52.705" y2="30.48" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B2">
-<contactref element="IC3" pad="11"/>
+<contactref element="SHIFTREG_MAIN" pad="11"/>
 <contactref element="U$2" pad="6"/>
 <contactref element="2" pad="A"/>
 <wire x1="52.705" y1="33.02" x2="88.9" y2="68.58" width="0" layer="19" extent="1-1"/>
@@ -2540,7 +2532,7 @@ design rules under a new name.</description>
 <contactref element="IC5" pad="10"/>
 <contactref element="IC5" pad="2"/>
 <contactref element="R18" pad="2"/>
-<contactref element="IC3" pad="7"/>
+<contactref element="SHIFTREG_MAIN" pad="7"/>
 <contactref element="R16" pad="2"/>
 <contactref element="R16" pad="1"/>
 <contactref element="C4" pad="2"/>
@@ -2587,8 +2579,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="END_OF_LOOP">
 <contactref element="IC5" pad="1"/>
-<contactref element="U$1" pad="COM2"/>
-<contactref element="U$1" pad="COM"/>
+<contactref element="LENGTH" pad="COM2"/>
+<contactref element="LENGTH" pad="COM"/>
 <contactref element="IC5" pad="5"/>
 <wire x1="77.47" y1="71.12" x2="87.63" y2="71.12" width="0" layer="19" extent="1-1"/>
 <wire x1="49.45" y1="28.315" x2="87.63" y2="71.12" width="0" layer="19" extent="1-1"/>
@@ -2698,7 +2690,7 @@ design rules under a new name.</description>
 <wire x1="16.51" y1="45.085" x2="20.32" y2="48.26" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$28">
-<contactref element="IC2" pad="7"/>
+<contactref element="SHIFTREG_EXT" pad="7"/>
 <contactref element="R14" pad="1"/>
 <contactref element="C2" pad="1"/>
 <wire x1="14.605" y1="38.1" x2="12.7" y2="80.01" width="0" layer="19" extent="1-1"/>
@@ -2719,17 +2711,17 @@ design rules under a new name.</description>
 <wire x1="36.83" y1="19.05" x2="55.88" y2="20.32" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BIT2_BACK">
-<contactref element="IC8" pad="9"/>
-<contactref element="IC10" pad="11"/>
+<contactref element="AND_2" pad="9"/>
+<contactref element="BUFFER2" pad="11"/>
 <wire x1="60.96" y1="78.74" x2="86.36" y2="90.17" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="CLOCK">
-<contactref element="IC8" pad="8"/>
-<contactref element="IC8" pad="13"/>
-<contactref element="IC8" pad="2"/>
-<contactref element="IC8" pad="6"/>
-<contactref element="IC10" pad="6"/>
-<contactref element="IC4" pad="9"/>
+<signal name="BUFFCLK_BACK">
+<contactref element="AND_2" pad="8"/>
+<contactref element="AND_2" pad="13"/>
+<contactref element="AND_2" pad="2"/>
+<contactref element="AND_2" pad="6"/>
+<contactref element="BUFFER2" pad="6"/>
+<contactref element="AND_1" pad="9"/>
 <contactref element="PULSES" pad="9"/>
 <contactref element="PULSES" pad="10"/>
 <contactref element="GATES" pad="9"/>
@@ -2744,143 +2736,143 @@ design rules under a new name.</description>
 <wire x1="71.12" y1="78.74" x2="71.12" y2="86.36" width="0" layer="19" extent="1-1"/>
 <wire x1="45.72" y1="55.88" x2="71.12" y2="78.74" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$1">
-<contactref element="IC10" pad="7"/>
-<contactref element="IC10" pad="9"/>
+<signal name="CLOCK_BACK">
+<contactref element="BUFFER2" pad="7"/>
+<contactref element="BUFFER2" pad="9"/>
 <wire x1="81.28" y1="90.17" x2="83.82" y2="97.79" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BIT1_BACK">
-<contactref element="IC8" pad="12"/>
-<contactref element="IC10" pad="14"/>
+<contactref element="AND_2" pad="12"/>
+<contactref element="BUFFER2" pad="14"/>
 <wire x1="68.58" y1="78.74" x2="93.98" y2="90.17" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PULSE1">
-<contactref element="IC8" pad="11"/>
+<contactref element="AND_2" pad="11"/>
 <contactref element="PULSES" pad="1"/>
 <wire x1="66.04" y1="78.74" x2="66.04" y2="54.61" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PULSE2">
-<contactref element="IC8" pad="10"/>
+<contactref element="AND_2" pad="10"/>
 <contactref element="PULSES" pad="2"/>
 <wire x1="63.5" y1="78.74" x2="66.04" y2="57.15" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BIT3_BACK">
-<contactref element="IC8" pad="1"/>
-<contactref element="IC10" pad="3"/>
+<contactref element="AND_2" pad="1"/>
+<contactref element="BUFFER2" pad="3"/>
 <wire x1="73.66" y1="86.36" x2="93.98" y2="97.79" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BIT4_BACK">
-<contactref element="IC8" pad="5"/>
-<contactref element="IC10" pad="5"/>
+<contactref element="AND_2" pad="5"/>
+<contactref element="BUFFER2" pad="5"/>
 <wire x1="63.5" y1="86.36" x2="88.9" y2="97.79" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PULSE4">
-<contactref element="IC8" pad="4"/>
+<contactref element="AND_2" pad="4"/>
 <contactref element="PULSES" pad="4"/>
 <wire x1="66.04" y1="86.36" x2="68.58" y2="57.15" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PULSE3">
-<contactref element="IC8" pad="3"/>
+<contactref element="AND_2" pad="3"/>
 <contactref element="PULSES" pad="3"/>
 <wire x1="68.58" y1="86.36" x2="68.58" y2="54.61" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BIT5_BACK">
-<contactref element="IC4" pad="12"/>
-<contactref element="IC9" pad="11"/>
+<contactref element="AND_1" pad="12"/>
+<contactref element="BUFFER1" pad="11"/>
 <wire x1="53.34" y1="55.88" x2="86.36" y2="81.28" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BIT6_BACK">
-<contactref element="IC4" pad="8"/>
-<contactref element="IC9" pad="9"/>
+<contactref element="AND_1" pad="8"/>
+<contactref element="BUFFER1" pad="9"/>
 <wire x1="43.18" y1="55.88" x2="81.28" y2="81.28" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BIT7_BACK">
-<contactref element="IC4" pad="5"/>
-<contactref element="IC9" pad="7"/>
+<contactref element="AND_1" pad="5"/>
+<contactref element="BUFFER1" pad="7"/>
 <wire x1="48.26" y1="63.5" x2="83.82" y2="88.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BIT8_BACK">
-<contactref element="IC4" pad="1"/>
-<contactref element="IC9" pad="3"/>
+<contactref element="AND_1" pad="1"/>
+<contactref element="BUFFER1" pad="3"/>
 <wire x1="58.42" y1="63.5" x2="93.98" y2="88.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PULSE5">
-<contactref element="IC4" pad="11"/>
+<contactref element="AND_1" pad="11"/>
 <contactref element="PULSES" pad="5"/>
 <wire x1="50.8" y1="55.88" x2="71.12" y2="54.61" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PULSE6">
-<contactref element="IC4" pad="10"/>
+<contactref element="AND_1" pad="10"/>
 <contactref element="PULSES" pad="6"/>
 <wire x1="48.26" y1="55.88" x2="71.12" y2="57.15" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PULSE7">
-<contactref element="IC4" pad="4"/>
+<contactref element="AND_1" pad="4"/>
 <contactref element="PULSES" pad="7"/>
 <wire x1="73.66" y1="54.61" x2="50.8" y2="63.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PULSE8">
-<contactref element="IC4" pad="3"/>
+<contactref element="AND_1" pad="3"/>
 <contactref element="PULSES" pad="8"/>
 <wire x1="73.66" y1="57.15" x2="53.34" y2="63.5" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="CLOCK2">
-<contactref element="IC10" pad="10"/>
-<contactref element="IC4" pad="13"/>
-<contactref element="IC4" pad="6"/>
-<contactref element="IC4" pad="2"/>
+<signal name="BUFFCLK2_BACK">
+<contactref element="BUFFER2" pad="10"/>
+<contactref element="AND_1" pad="13"/>
+<contactref element="AND_1" pad="6"/>
+<contactref element="AND_1" pad="2"/>
 <wire x1="55.88" y1="55.88" x2="55.88" y2="63.5" width="0" layer="19" extent="1-1"/>
 <wire x1="45.72" y1="63.5" x2="55.88" y2="63.5" width="0" layer="19" extent="1-1"/>
 <wire x1="83.82" y1="90.17" x2="45.72" y2="63.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GATE1">
-<contactref element="IC10" pad="15"/>
+<contactref element="BUFFER2" pad="15"/>
 <contactref element="GATES" pad="1"/>
 <wire x1="96.52" y1="90.17" x2="87.63" y2="54.61" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GATE2">
-<contactref element="IC10" pad="12"/>
+<contactref element="BUFFER2" pad="12"/>
 <contactref element="GATES" pad="2"/>
 <wire x1="88.9" y1="90.17" x2="87.63" y2="57.15" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GATE3">
-<contactref element="IC10" pad="2"/>
+<contactref element="BUFFER2" pad="2"/>
 <contactref element="GATES" pad="3"/>
 <wire x1="96.52" y1="97.79" x2="90.17" y2="54.61" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GATE4">
-<contactref element="IC10" pad="4"/>
+<contactref element="BUFFER2" pad="4"/>
 <contactref element="GATES" pad="4"/>
 <wire x1="91.44" y1="97.79" x2="90.17" y2="57.15" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GATE5">
-<contactref element="IC9" pad="12"/>
+<contactref element="BUFFER1" pad="12"/>
 <contactref element="GATES" pad="5"/>
 <wire x1="88.9" y1="81.28" x2="92.71" y2="54.61" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GATE6">
-<contactref element="IC9" pad="10"/>
+<contactref element="BUFFER1" pad="10"/>
 <contactref element="GATES" pad="6"/>
 <wire x1="83.82" y1="81.28" x2="92.71" y2="57.15" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GATE7">
-<contactref element="IC9" pad="6"/>
+<contactref element="BUFFER1" pad="6"/>
 <contactref element="GATES" pad="7"/>
 <wire x1="86.36" y1="88.9" x2="95.25" y2="54.61" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GATE8">
-<contactref element="IC9" pad="2"/>
+<contactref element="BUFFER1" pad="2"/>
 <contactref element="GATES" pad="8"/>
 <wire x1="96.52" y1="88.9" x2="95.25" y2="57.15" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$29">
 <contactref element="IC11" pad="1"/>
-<contactref element="IC10" pad="1"/>
+<contactref element="BUFFER2" pad="1"/>
 <wire x1="99.06" y1="97.79" x2="35.56" y2="91.44" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$38">
 <contactref element="IC12" pad="1"/>
-<contactref element="IC9" pad="1"/>
+<contactref element="BUFFER1" pad="1"/>
 <wire x1="99.06" y1="88.9" x2="8.89" y2="85.09" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+12V_INLET" class="1">
@@ -2914,14 +2906,14 @@ design rules under a new name.</description>
 <signal name="+12V_BACK" class="1">
 <contactref element="L1" pad="1"/>
 <contactref element="C5" pad="1"/>
-<contactref element="IC4" pad="14"/>
-<contactref element="IC8" pad="14"/>
+<contactref element="AND_2" pad="14"/>
 <contactref element="PULSES" pad="15"/>
 <contactref element="PULSES" pad="16"/>
 <contactref element="GATES" pad="15"/>
 <contactref element="GATES" pad="16"/>
 <contactref element="IC11" pad="3"/>
 <contactref element="IC12" pad="3"/>
+<contactref element="AND_1" pad="14"/>
 <wire x1="105.41" y1="54.61" x2="105.41" y2="57.15" width="0" layer="19" extent="1-1"/>
 <wire x1="83.82" y1="57.15" x2="105.41" y2="57.15" width="0" layer="19" extent="1-1"/>
 <wire x1="83.82" y1="54.61" x2="83.82" y2="57.15" width="0" layer="19" extent="1-1"/>
@@ -2935,6 +2927,14 @@ design rules under a new name.</description>
 <signal name="-12V_BACK" class="1">
 <contactref element="L2" pad="1"/>
 <contactref element="C6" pad="2"/>
+<contactref element="PULSES" pad="11"/>
+<contactref element="PULSES" pad="12"/>
+<contactref element="GATES" pad="11"/>
+<contactref element="GATES" pad="12"/>
+<wire x1="100.33" y1="54.61" x2="100.33" y2="57.15" width="0" layer="19" extent="1-1"/>
+<wire x1="78.74" y1="57.15" x2="100.33" y2="57.15" width="0" layer="19" extent="1-1"/>
+<wire x1="78.74" y1="54.61" x2="78.74" y2="57.15" width="0" layer="19" extent="1-1"/>
+<wire x1="37.465" y1="75.565" x2="78.74" y2="57.15" width="0" layer="19" extent="1-1"/>
 <wire x1="-11.43" y1="-25.4" x2="37.465" y2="75.565" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND_BACK" class="2">
@@ -2948,18 +2948,18 @@ design rules under a new name.</description>
 <contactref element="D6" pad="C"/>
 <contactref element="C5" pad="2"/>
 <contactref element="C6" pad="1"/>
-<contactref element="IC4" pad="7"/>
-<contactref element="IC8" pad="7"/>
+<contactref element="AND_2" pad="7"/>
 <contactref element="PULSES" pad="13"/>
 <contactref element="PULSES" pad="14"/>
 <contactref element="GATES" pad="13"/>
 <contactref element="GATES" pad="14"/>
-<contactref element="IC9" pad="5"/>
-<contactref element="IC9" pad="14"/>
+<contactref element="BUFFER1" pad="5"/>
+<contactref element="BUFFER1" pad="14"/>
 <contactref element="IC11" pad="2"/>
-<contactref element="IC10" pad="8"/>
-<contactref element="IC9" pad="8"/>
+<contactref element="BUFFER2" pad="8"/>
+<contactref element="BUFFER1" pad="8"/>
 <contactref element="IC12" pad="2"/>
+<contactref element="AND_1" pad="7"/>
 <wire x1="81.28" y1="88.9" x2="88.9" y2="88.9" width="0" layer="19" extent="1-1"/>
 <wire x1="81.28" y1="97.79" x2="81.28" y2="88.9" width="0" layer="19" extent="1-1"/>
 <wire x1="93.98" y1="81.28" x2="88.9" y2="88.9" width="0" layer="19" extent="1-1"/>
@@ -3002,8 +3002,8 @@ design rules under a new name.</description>
 <contactref element="C13" pad="2"/>
 <contactref element="C8" pad="1"/>
 <contactref element="C14" pad="2"/>
-<contactref element="IC2" pad="8"/>
-<contactref element="IC3" pad="8"/>
+<contactref element="SHIFTREG_EXT" pad="8"/>
+<contactref element="SHIFTREG_MAIN" pad="8"/>
 <contactref element="IC5" pad="7"/>
 <contactref element="RN2" pad="1"/>
 <contactref element="R13" pad="1"/>
