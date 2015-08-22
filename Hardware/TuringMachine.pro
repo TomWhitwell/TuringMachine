@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : /Users/Tom/Documents/GitHub/TuringMachine/Hardware/TuringMachine.brd
+Job           : /Users/tom/Documents/GitHub/TuringMachine/Hardware/TuringMachine.brd
 
-Start at      : 14:25:16 (25/07/2015)
-End at        : 14:26:41 (25/07/2015)
-Elapsed time  : 00:01:25
+Start at      : 18:33:29 (21/08/2015)
+End at        : 18:35:05 (21/08/2015)
+Elapsed time  : 00:01:36
 
-Signals       :    58   RoutingGrid: 5.5 mil  Layers: 2
-Connections   :   205   predefined:  26 ( 0 Vias )
+Signals       :    99   RoutingGrid: 12.5 mil  Layers: 2
+Connections   :   298   predefined:  37 ( 0 Vias )
 
-Router memory :   1532520
+Router memory :   709188
 
-Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4 Optimize5 Optimize6 Optimize7 Optimize8 Optimize9Optimize10Optimize11Optimize12
+Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:49  00:00:05  00:00:03  00:00:03  00:00:03  00:00:02  00:00:03  00:00:02  00:00:03  00:00:02  00:00:03  00:00:02  00:00:03  00:00:02
-Number of Ripups  :         0         6         0         0         0         0         0         0         0         0         0         0         0         0
-max. Level        :         0         1         0         0         0         0         0         0         0         0         0         0         0         0
-max. Total        :         0        18         0         0         0         0         0         0         0         0         0         0         0         0
+Time per pass     :  00:00:00  00:01:23  00:00:04  00:00:03  00:00:03  00:00:03
+Number of Ripups  :         0         0         0         0         0         0
+max. Level        :         0         9         0         0         0         0
+max. Total        :         0         9         0         0         0         0
 
-Routed            :       104       179       175       178       178       178       178       178       178       179       179       179       179       179
-Vias              :         0        79        62        52        44        40        40        40        38        35        34        34        34        34
-Resolution        :    63.4 %   100.0 %    98.0 %    99.5 %    99.5 %    99.5 %    99.5 %    99.5 %    99.5 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Routed            :        29       253       253       253       253       253
+Vias              :         0       330        75        46        36        32
+Resolution        :    22.1 %    97.3 %    97.3 %    97.3 %    97.3 %    97.3 %
 
-Final             : 100.0% finished
+Final             : 94.0% finished. Polygons may have fallen apart.
