@@ -2,24 +2,24 @@ EAGLE AutoRouter Statistics:
 
 Job           : /Users/tom/Documents/GitHub/TuringMachine/Hardware/TuringMachine.brd
 
-Start at      : 18:33:29 (21/08/2015)
-End at        : 18:35:05 (21/08/2015)
-Elapsed time  : 00:01:36
+Start at      : 11:57:11 (24/08/2015)
+End at        : 11:57:22 (24/08/2015)
+Elapsed time  : 00:00:10
 
-Signals       :    99   RoutingGrid: 12.5 mil  Layers: 2
-Connections   :   298   predefined:  37 ( 0 Vias )
+Signals       :   101   RoutingGrid: 12.5 mil  Layers: 2
+Connections   :   296   predefined:  71 ( 6 Vias )
 
-Router memory :   709188
+Router memory :   596640
 
 Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:00  00:01:23  00:00:04  00:00:03  00:00:03  00:00:03
+Time per pass     :  00:00:00  00:00:02  00:00:02  00:00:02  00:00:02  00:00:02
 Number of Ripups  :         0         0         0         0         0         0
-max. Level        :         0         9         0         0         0         0
-max. Total        :         0         9         0         0         0         0
+max. Level        :         0         0         0         0         0         0
+max. Total        :         0         0         0         0         0         0
 
-Routed            :        29       253       253       253       253       253
-Vias              :         0       330        75        46        36        32
-Resolution        :    22.1 %    97.3 %    97.3 %    97.3 %    97.3 %    97.3 %
+Routed            :        32       225       225       225       225       225
+Vias              :         0       300        91        66        61        62
+Resolution        :    34.8 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
-Final             : 94.0% finished. Polygons may have fallen apart.
+Final             : 99.7% finished. Polygons may have fallen apart.
