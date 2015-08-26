@@ -13183,7 +13183,7 @@ Source: http://www.murata.com .. BL01RN1_DS.pdf</description>
 <instance part="SHIFTREG_EXT" gate="P" x="96.52" y="139.7"/>
 <instance part="C13" gate="G$1" x="88.9" y="200.66"/>
 <instance part="T1" gate="G1" x="144.78" y="71.12" rot="R180"/>
-<instance part="R29" gate="G$1" x="142.24" y="83.82" rot="R270"/>
+<instance part="R29" gate="G$1" x="142.24" y="83.82" rot="R90"/>
 <instance part="C10" gate="G$1" x="152.4" y="78.74" rot="R90"/>
 <instance part="R30" gate="G$1" x="162.56" y="78.74"/>
 <instance part="R31" gate="G$1" x="177.8" y="71.12" rot="R180"/>
@@ -13277,7 +13277,7 @@ Source: http://www.murata.com .. BL01RN1_DS.pdf</description>
 </segment>
 <segment>
 <pinref part="R29" gate="G$1" pin="2"/>
-<wire x1="142.24" y1="91.44" x2="142.24" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="91.44" x2="142.24" y2="88.9" width="0.1524" layer="91"/>
 <label x="142.24" y="90.17" size="1.016" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
@@ -13375,10 +13375,10 @@ Source: http://www.murata.com .. BL01RN1_DS.pdf</description>
 <segment>
 <pinref part="T1" gate="G1" pin="E"/>
 <pinref part="R29" gate="G$1" pin="1"/>
-<wire x1="142.24" y1="76.2" x2="142.24" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="76.2" x2="142.24" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="78.74" x2="142.24" y2="88.9" width="0.1524" layer="91"/>
-<junction x="142.24" y="88.9"/>
+<wire x1="149.86" y1="78.74" x2="142.24" y2="78.74" width="0.1524" layer="91"/>
+<junction x="142.24" y="78.74"/>
 </segment>
 </net>
 <net name="N$20" class="0">
