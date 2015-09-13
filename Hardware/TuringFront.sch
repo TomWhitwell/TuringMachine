@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -9610,9 +9610,9 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="-1.5" y1="6" x2="-1.5" y2="4" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="4" x2="1.5" y2="4" width="0.127" layer="21"/>
 <wire x1="1.5" y1="4" x2="1.5" y2="6" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="5" drill="1.1" thermals="no"/>
-<pad name="P$2" x="0" y="-3.5" drill="1.1"/>
-<pad name="P$3" x="0" y="-6.5" drill="1.1"/>
+<pad name="P$1_TIP" x="0" y="5" drill="1.1" thermals="no"/>
+<pad name="P$2_SWITCH" x="0" y="-3.5" drill="1.1"/>
+<pad name="P$3_SLEEVE" x="0" y="-6.5" drill="1.1"/>
 <circle x="0" y="0" radius="2.690721875" width="0.127" layer="21"/>
 <wire x1="-0.2" y1="-4.6" x2="-0.2" y2="-6.7" width="0.127" layer="21"/>
 <wire x1="-0.2" y1="-6.7" x2="0.2" y2="-6.7" width="0.127" layer="21"/>
@@ -9736,27 +9736,14 @@ DIN A3, landscape with extra doc field</description>
 <pad name="1" x="-2.5" y="-7" drill="1.1" diameter="1.6764" shape="square" rot="R270"/>
 <pad name="2" x="0" y="-7" drill="1.1" diameter="1.6764" shape="octagon" rot="R270"/>
 <pad name="3" x="2.5" y="-7" drill="1.1" diameter="1.6764" shape="octagon" rot="R270"/>
-<pad name="M1" x="4.5" y="0" drill="2.1" diameter="2.8" shape="square" rot="R270"/>
-<pad name="M2" x="-4.5" y="0" drill="2.1" diameter="2.8" shape="square" rot="R270"/>
+<pad name="CHASSIS2" x="4.5" y="0" drill="2.1" diameter="2.8" shape="square" rot="R270"/>
+<pad name="CHASSIS1" x="-4.5" y="0" drill="2.1" diameter="2.8" shape="square" rot="R270"/>
 <text x="-3.81" y="2.54" size="1.0668" layer="25">&gt;NAME</text>
 <text x="-3.81" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-2.925" y1="-7.325" x2="-2.075" y2="-6" layer="51"/>
 <rectangle x1="-0.425" y1="-7.325" x2="0.425" y2="-6" layer="51"/>
 <rectangle x1="2.075" y1="-7.325" x2="2.925" y2="-6" layer="51"/>
 <circle x="0" y="0" radius="1.016" width="0.0508" layer="21"/>
-</package>
-<package name="THONKICONN">
-<description>3.5mm socket for Eurorack modular synths</description>
-<pad name="P$3" x="0" y="4.84" drill="1.55" shape="square"/>
-<pad name="P$2" x="0" y="-3.38" drill="1.55" shape="square"/>
-<pad name="P$1" x="0" y="-6.48" drill="1.35" shape="square"/>
-<wire x1="-4.5" y1="6" x2="4.5" y2="6" width="0.127" layer="21"/>
-<wire x1="4.5" y1="6" x2="4.5" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="4.5" y1="-4.5" x2="-4.5" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="-4.5" y1="-4.5" x2="-4.5" y2="6" width="0.127" layer="21"/>
-<text x="-3.8" y="1.5" size="1" layer="21" font="vector">&gt;NAME</text>
-<wire x1="-0.5" y1="0" x2="0.5" y2="0" width="0.08" layer="21"/>
-<wire x1="0" y1="0.5" x2="0" y2="-0.5" width="0.08" layer="21"/>
 </package>
 <package name="10MM_RESISTOR">
 <description>Standard resistor on 10mm grid</description>
@@ -9975,6 +9962,19 @@ DIN A3, landscape with extra doc field</description>
 <rectangle x1="2.286" y1="1.016" x2="2.794" y2="1.524" layer="51"/>
 <rectangle x1="4.826" y1="1.016" x2="5.334" y2="1.524" layer="51"/>
 </package>
+<package name="THONKICONN">
+<description>3.5mm socket for Eurorack modular synths</description>
+<pad name="P$3_TIP" x="0" y="4.84" drill="1.55" shape="square"/>
+<pad name="P$2_SWITCH" x="0" y="-3.38" drill="1.55" shape="square"/>
+<pad name="P$1_SLEEVE" x="0" y="-6.48" drill="1.35" shape="square"/>
+<wire x1="-4.5" y1="6" x2="4.5" y2="6" width="0.127" layer="21"/>
+<wire x1="4.5" y1="6" x2="4.5" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="4.5" y1="-4.5" x2="-4.5" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="-4.5" x2="-4.5" y2="6" width="0.127" layer="21"/>
+<text x="-3.8" y="1.5" size="1" layer="21" font="vector">&gt;NAME</text>
+<wire x1="-0.5" y1="0" x2="0.5" y2="0" width="0.08" layer="21"/>
+<wire x1="0" y1="0.5" x2="0" y2="-0.5" width="0.08" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="THONKICONN">
@@ -9991,9 +9991,9 @@ DIN A3, landscape with extra doc field</description>
 <text x="-2.54" y="4.064" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-6.096" size="1.778" layer="96">&gt;VALUE</text>
 <rectangle x1="2.286" y1="-0.508" x2="7.874" y2="0.508" layer="94" rot="R90"/>
-<pin name="5" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas"/>
-<pin name="3" x="-5.08" y="2.54" visible="pad" length="short" direction="pas"/>
-<pin name="4" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="SLEEVE" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas"/>
+<pin name="TIP" x="-5.08" y="2.54" visible="pad" length="short" direction="pas"/>
+<pin name="SWITCH" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
 </symbol>
 <symbol name="TPOT">
 <wire x1="-0.762" y1="2.54" x2="-0.762" y2="-2.54" width="0.254" layer="94"/>
@@ -10141,9 +10141,9 @@ DIN A3, landscape with extra doc field</description>
 <devices>
 <device name="OLD" package="THONKICONN">
 <connects>
-<connect gate="G$1" pin="3" pad="P$3"/>
-<connect gate="G$1" pin="4" pad="P$2"/>
-<connect gate="G$1" pin="5" pad="P$1"/>
+<connect gate="G$1" pin="SLEEVE" pad="P$1_SLEEVE"/>
+<connect gate="G$1" pin="SWITCH" pad="P$2_SWITCH"/>
+<connect gate="G$1" pin="TIP" pad="P$3_TIP"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10151,9 +10151,9 @@ DIN A3, landscape with extra doc field</description>
 </device>
 <device name="NEW" package="WQP-PJ301M-12_JACK">
 <connects>
-<connect gate="G$1" pin="3" pad="P$3"/>
-<connect gate="G$1" pin="4" pad="P$2"/>
-<connect gate="G$1" pin="5" pad="P$1"/>
+<connect gate="G$1" pin="SLEEVE" pad="P$3_SLEEVE"/>
+<connect gate="G$1" pin="SWITCH" pad="P$2_SWITCH"/>
+<connect gate="G$1" pin="TIP" pad="P$1_TIP"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10242,7 +10242,7 @@ DIN A3, landscape with extra doc field</description>
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="E" pad="3"/>
-<connect gate="G$1" pin="P$1" pad="M1 M2"/>
+<connect gate="G$1" pin="P$1" pad="CHASSIS2"/>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
@@ -10587,7 +10587,7 @@ DIN A3, landscape with extra doc field</description>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="CV_IN" gate="G$1" pin="3"/>
+<pinref part="CV_IN" gate="G$1" pin="TIP"/>
 <wire x1="83.82" y1="203.2" x2="76.2" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 </segment>
@@ -10603,7 +10603,7 @@ DIN A3, landscape with extra doc field</description>
 <label x="58.42" y="223.52" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="CV_IN" gate="G$1" pin="5"/>
+<pinref part="CV_IN" gate="G$1" pin="SLEEVE"/>
 <wire x1="81.28" y1="208.28" x2="76.2" y2="208.28" width="0.1524" layer="91"/>
 <label x="81.28" y="208.28" size="1.016" layer="95" xref="yes"/>
 </segment>
@@ -11041,8 +11041,8 @@ DIN A3, landscape with extra doc field</description>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="CLOCK" gate="G$1" pin="3"/>
-<pinref part="CLOCK" gate="G$1" pin="3"/>
+<pinref part="CLOCK" gate="G$1" pin="TIP"/>
+<pinref part="CLOCK" gate="G$1" pin="TIP"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="299.72" y1="76.2" x2="307.34" y2="76.2" width="0.1524" layer="91"/>
 <junction x="299.72" y="76.2"/>
@@ -11148,14 +11148,14 @@ DIN A3, landscape with extra doc field</description>
 </net>
 <net name="N$39" class="0">
 <segment>
-<pinref part="CV_OUT" gate="G$1" pin="3"/>
+<pinref part="CV_OUT" gate="G$1" pin="TIP"/>
 <wire x1="347.98" y1="142.24" x2="358.14" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="VR3" gate="G$1" pin="S"/>
 </segment>
 </net>
 <net name="N$40" class="0">
 <segment>
-<pinref part="NOISE-OUT" gate="G$1" pin="3"/>
+<pinref part="NOISE-OUT" gate="G$1" pin="TIP"/>
 <pinref part="R19" gate="G$1" pin="1"/>
 <wire x1="259.08" y1="76.2" x2="256.54" y2="76.2" width="0.1524" layer="91"/>
 </segment>
@@ -11312,7 +11312,7 @@ DIN A3, landscape with extra doc field</description>
 <label x="241.3" y="59.69" size="1.016" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="NOISE-OUT" gate="G$1" pin="5"/>
+<pinref part="NOISE-OUT" gate="G$1" pin="SLEEVE"/>
 <wire x1="259.08" y1="71.12" x2="259.08" y2="60.96" width="0.1524" layer="91"/>
 <label x="259.08" y="60.96" size="1.016" layer="95" xref="yes"/>
 </segment>
@@ -11327,7 +11327,7 @@ DIN A3, landscape with extra doc field</description>
 <label x="210.82" y="93.98" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="CLOCK" gate="G$1" pin="5"/>
+<pinref part="CLOCK" gate="G$1" pin="SLEEVE"/>
 <wire x1="302.26" y1="81.28" x2="299.72" y2="81.28" width="0.1524" layer="91"/>
 <label x="302.26" y="81.28" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -11364,7 +11364,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="335.28" y1="142.24" x2="335.28" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="335.28" y1="132.08" x2="342.9" y2="132.08" width="0.1524" layer="91"/>
 <junction x="342.9" y="132.08"/>
-<pinref part="CV_OUT" gate="G$1" pin="5"/>
+<pinref part="CV_OUT" gate="G$1" pin="SLEEVE"/>
 <wire x1="358.14" y1="137.16" x2="358.14" y2="127" width="0.1524" layer="91"/>
 <wire x1="342.9" y1="127" x2="358.14" y2="127" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="VLC"/>
@@ -11395,7 +11395,7 @@ DIN A3, landscape with extra doc field</description>
 <label x="325.12" y="187.96" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PULSE_OUT" gate="G$1" pin="5"/>
+<pinref part="PULSE_OUT" gate="G$1" pin="SLEEVE"/>
 <wire x1="241.3" y1="220.98" x2="241.3" y2="213.36" width="0.1524" layer="91"/>
 <label x="241.3" y="205.74" size="1.016" layer="95" xref="yes"/>
 <pinref part="PULS1" gate="G$1" pin="C"/>
@@ -11517,7 +11517,7 @@ DIN A3, landscape with extra doc field</description>
 </net>
 <net name="PULSE_OUT_FRONT" class="0">
 <segment>
-<pinref part="PULSE_OUT" gate="G$1" pin="3"/>
+<pinref part="PULSE_OUT" gate="G$1" pin="TIP"/>
 <wire x1="241.3" y1="226.06" x2="231.14" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="226.06" x2="231.14" y2="241.3" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="1"/>
