@@ -11,3 +11,6 @@ Changelog
 - 2 x transistors & resistors removed, replaced by spare 4016 gates used as inverters 
 - Compatible with old expanders 
 
+Status:   
+- Prototypes on the way  
+- Layouts NOT confirmed 
