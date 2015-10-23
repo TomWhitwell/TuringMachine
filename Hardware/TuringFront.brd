@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -1974,8 +1974,8 @@ design rules under a new name.</description>
 <element name="2" library="TomW" package="LED3MM" value="" x="105.156" y="8.89" rot="R90"/>
 <element name="1" library="TomW" package="LED3MM" value="" x="105.156" y="2.54" rot="R90"/>
 <element name="R13" library="TomW" package="0207/7" value="2.2k" x="12.7" y="37.465" rot="R90"/>
-<element name="VR2" library="MusicThingModular" package="9MM_SNAP-IN_POT" value="" x="77.47" y="24.765" rot="R270"/>
-<element name="VR3" library="MusicThingModular" package="9MM_SNAP-IN_POT" value="" x="22.86" y="6.35" locked="yes" rot="R270"/>
+<element name="CHANGE" library="MusicThingModular" package="9MM_SNAP-IN_POT" value="50k" x="77.47" y="24.765" rot="R270"/>
+<element name="SCALE" library="MusicThingModular" package="9MM_SNAP-IN_POT" value="50k" x="22.86" y="6.35" locked="yes" rot="R270"/>
 <element name="C17" library="TomW" package="C050-024X044" value="1n" x="64.77" y="15.24" rot="R90"/>
 <element name="TL431" library="TomW" package="TO92-CLP" value="" x="76.2" y="7.62" rot="R270"/>
 <element name="R20" library="TomW" package="0207/7" value="3.3k" x="69.85" y="5.08" rot="R90"/>
@@ -2181,7 +2181,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="MAIN_OUT">
 <contactref element="U1" pad="1"/>
-<contactref element="VR3" pad="3"/>
+<contactref element="SCALE" pad="3"/>
 <contactref element="R26" pad="2"/>
 <contactref element="C17" pad="2"/>
 <wire x1="15.86" y1="3.85" x2="16.55" y2="3.85" width="0.254" layer="1"/>
@@ -2397,7 +2397,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$43">
 <contactref element="R22" pad="1"/>
-<contactref element="VR2" pad="2"/>
+<contactref element="CHANGE" pad="2"/>
 <wire x1="62.23" y1="1.27" x2="62.23" y2="2.86511875" width="0.254" layer="1"/>
 <wire x1="62.23" y1="2.86511875" x2="62.44911875" y2="3.39411875" width="0.254" layer="1" curve="-45"/>
 <wire x1="62.44911875" y1="3.39411875" x2="63.45314375" y2="3.81" width="0.254" layer="1" curve="-45.000126"/>
@@ -2424,7 +2424,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$47">
 <contactref element="R23" pad="1"/>
-<contactref element="VR2" pad="3"/>
+<contactref element="CHANGE" pad="3"/>
 <wire x1="64.77" y1="1.27" x2="64.77" y2="2.276975" width="0.254" layer="1"/>
 <wire x1="64.77" y1="2.276975" x2="64.9559875" y2="2.7259875" width="0.254" layer="1" curve="-45"/>
 <wire x1="64.9559875" y1="2.7259875" x2="65.141975" y2="2.911975" width="0.254" layer="1"/>
@@ -2441,7 +2441,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$48">
 <contactref element="R35" pad="1"/>
-<contactref element="VR2" pad="1"/>
+<contactref element="CHANGE" pad="1"/>
 <wire x1="59.69" y1="1.27" x2="59.69" y2="3.283946875" width="0.254" layer="1"/>
 <wire x1="59.69" y1="3.283946875" x2="60.061975" y2="4.181975" width="0.254" layer="1" curve="-45"/>
 <wire x1="60.061975" y1="4.181975" x2="60.696975" y2="4.445" width="0.254" layer="1" curve="-45"/>
@@ -2547,7 +2547,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$39">
 <contactref element="CV_OUT" pad="P$1_TIP"/>
-<contactref element="VR3" pad="2"/>
+<contactref element="SCALE" pad="2"/>
 <wire x1="1.35" y1="5.715" x2="1.35" y2="5.795" width="0.254" layer="1"/>
 <wire x1="1.35" y1="5.795" x2="2.3540125" y2="6.7990125" width="0.254" layer="1"/>
 <wire x1="2.3540125" y1="6.7990125" x2="2.803025" y2="6.985" width="0.254" layer="1" curve="-45"/>
@@ -2694,13 +2694,13 @@ design rules under a new name.</description>
 <contactref element="C15" pad="1"/>
 <contactref element="C16" pad="1"/>
 <contactref element="U1" pad="12"/>
-<contactref element="VR3" pad="1"/>
-<contactref element="VR3" pad="CHASSIS2"/>
+<contactref element="SCALE" pad="1"/>
+<contactref element="SCALE" pad="CHASSIS2"/>
 <contactref element="R27" pad="1"/>
 <contactref element="TL431" pad="A"/>
 <contactref element="U$2" pad="1"/>
 <contactref element="U$2" pad="2"/>
-<contactref element="VR2" pad="CHASSIS2"/>
+<contactref element="CHANGE" pad="CHASSIS2"/>
 <contactref element="CV_IN" pad="P$3_SLEEVE"/>
 <contactref element="WRITE" pad="3"/>
 <contactref element="FRONT_PWR" pad="4"/>

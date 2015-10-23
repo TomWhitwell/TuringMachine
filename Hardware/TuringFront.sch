@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -10443,8 +10443,8 @@ DIN A3, landscape with extra doc field</description>
 <part name="2" library="TomW" deviceset="LED" device="3MM"/>
 <part name="1" library="TomW" deviceset="LED" device="3MM"/>
 <part name="R13" library="TomW" deviceset="R-EU_" device="0207/7" value="2.2k"/>
-<part name="VR2" library="MusicThingModular" deviceset="9MM_SNAP-IN_POT_CHASSIS" device=""/>
-<part name="VR3" library="MusicThingModular" deviceset="9MM_SNAP-IN_POT_CHASSIS" device=""/>
+<part name="CHANGE" library="MusicThingModular" deviceset="9MM_SNAP-IN_POT_CHASSIS" device="" value="50k"/>
+<part name="SCALE" library="MusicThingModular" deviceset="9MM_SNAP-IN_POT_CHASSIS" device="" value="50k"/>
 <part name="C17" library="TomW" deviceset="C-EU" device="050-024X044" value="1n"/>
 <part name="TL431" library="TomW" deviceset="TL431CLP" device=""/>
 <part name="R20" library="TomW" deviceset="R-EU_" device="0207/7" value="3.3k"/>
@@ -10496,7 +10496,7 @@ DIN A3, landscape with extra doc field</description>
 <instance part="CV_IN" gate="G$1" x="71.12" y="205.74" rot="R180"/>
 <instance part="R5" gate="G$1" x="88.9" y="203.2"/>
 <instance part="LENGTH" gate="G$1" x="68.58" y="25.4" rot="R90"/>
-<instance part="VR2" gate="G$1" x="66.04" y="228.6"/>
+<instance part="CHANGE" gate="G$1" x="66.04" y="228.6"/>
 <instance part="FRONT_PWR" gate="1" x="68.58" y="81.28"/>
 <instance part="FRONT_BUS2" gate="1" x="68.58" y="66.04"/>
 <instance part="SV1" gate="G$1" x="68.58" y="99.06"/>
@@ -10546,7 +10546,7 @@ DIN A3, landscape with extra doc field</description>
 <instance part="2" gate="G$1" x="210.82" y="33.02"/>
 <instance part="1" gate="G$1" x="215.9" y="25.4"/>
 <instance part="R13" gate="G$1" x="172.72" y="25.4" rot="R270"/>
-<instance part="VR3" gate="G$1" x="271.78" y="160.02"/>
+<instance part="SCALE" gate="G$1" x="271.78" y="160.02"/>
 <instance part="C17" gate="G$1" x="243.84" y="149.86" rot="R90"/>
 <instance part="TL431" gate="G$1" x="254" y="215.9" rot="R90"/>
 <instance part="R20" gate="G$1" x="254" y="233.68" rot="R270"/>
@@ -10659,21 +10659,21 @@ DIN A3, landscape with extra doc field</description>
 <segment>
 <pinref part="R22" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="228.6" x2="71.12" y2="228.6" width="0.1524" layer="91"/>
-<pinref part="VR2" gate="G$1" pin="S"/>
+<pinref part="CHANGE" gate="G$1" pin="S"/>
 </segment>
 </net>
 <net name="N$47" class="0">
 <segment>
 <pinref part="R23" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="236.22" x2="66.04" y2="236.22" width="0.1524" layer="91"/>
-<pinref part="VR2" gate="G$1" pin="E"/>
+<pinref part="CHANGE" gate="G$1" pin="E"/>
 </segment>
 </net>
 <net name="N$48" class="0">
 <segment>
 <pinref part="R35" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="220.98" x2="66.04" y2="220.98" width="0.1524" layer="91"/>
-<pinref part="VR2" gate="G$1" pin="A"/>
+<pinref part="CHANGE" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="END_OF_LOOP_BACK" class="0">
@@ -10691,7 +10691,7 @@ DIN A3, landscape with extra doc field</description>
 </net>
 <net name="GND_FRONT" class="2">
 <segment>
-<pinref part="VR2" gate="G$1" pin="P$1"/>
+<pinref part="CHANGE" gate="G$1" pin="P$1"/>
 <wire x1="58.42" y1="223.52" x2="58.42" y2="228.6" width="0.1524" layer="91"/>
 <label x="58.42" y="223.52" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -10824,8 +10824,8 @@ DIN A3, landscape with extra doc field</description>
 <label x="355.6" y="63.5" size="1.016" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="VR3" gate="G$1" pin="A"/>
-<pinref part="VR3" gate="G$1" pin="P$1"/>
+<pinref part="SCALE" gate="G$1" pin="A"/>
+<pinref part="SCALE" gate="G$1" pin="P$1"/>
 <wire x1="271.78" y1="144.78" x2="271.78" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="149.86" x2="271.78" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="160.02" x2="264.16" y2="149.86" width="0.1524" layer="91"/>
@@ -11345,7 +11345,7 @@ DIN A3, landscape with extra doc field</description>
 <segment>
 <pinref part="U1" gate="A" pin="OUT"/>
 <wire x1="254" y1="167.64" x2="256.54" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="VR3" gate="G$1" pin="E"/>
+<pinref part="SCALE" gate="G$1" pin="E"/>
 <wire x1="256.54" y1="167.64" x2="271.78" y2="167.64" width="0.1524" layer="91"/>
 <junction x="256.54" y="167.64"/>
 <wire x1="256.54" y1="167.64" x2="256.54" y2="157.48" width="0.1524" layer="91"/>
@@ -11385,7 +11385,7 @@ DIN A3, landscape with extra doc field</description>
 <segment>
 <pinref part="CV_OUT" gate="G$1" pin="TIP"/>
 <wire x1="276.86" y1="160.02" x2="287.02" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="VR3" gate="G$1" pin="S"/>
+<pinref part="SCALE" gate="G$1" pin="S"/>
 </segment>
 </net>
 <net name="N$40" class="0">
