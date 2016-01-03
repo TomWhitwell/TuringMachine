@@ -164,8 +164,8 @@ Based on the following sources:
 <pad name="14" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
 <pad name="15" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
 <pad name="16" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-10.541" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-7.493" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="9.779" y="-2.286" size="1.016" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="0.127" y="0" size="2.032" layer="27" ratio="10" align="center">&gt;VALUE</text>
 </package>
 <package name="SO16">
 <description>&lt;b&gt;Small Outline package&lt;/b&gt; 150 mil</description>
@@ -238,8 +238,8 @@ Based on the following sources:
 <pad name="12" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
 <pad name="13" x="-5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
 <pad name="14" x="-7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-9.271" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="8.509" y="-2.413" size="1.016" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-0.381" y="0" size="2.032" layer="27" ratio="10" align="center">&gt;VALUE</text>
 </package>
 <package name="SO14">
 <description>&lt;b&gt;Small Outline package&lt;/b&gt; 150 mil</description>
@@ -567,7 +567,6 @@ Based on the following sources:
 <packages>
 <package name="MA05-2">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-6.35" y1="3.175" x2="-6.35" y2="-3.175" width="0.508" layer="21"/>
 <wire x1="6.35" y1="1.905" x2="6.35" y2="-1.905" width="0.1524" layer="21"/>
 <wire x1="5.715" y1="2.54" x2="6.35" y2="1.905" width="0.1524" layer="21"/>
 <wire x1="6.35" y1="-1.905" x2="5.715" y2="-2.54" width="0.1524" layer="21"/>
@@ -597,10 +596,7 @@ Based on the following sources:
 <text x="2.911053125" y="2.51271875" size="0.762" layer="21" ratio="15" rot="R90">GND</text>
 <text x="4.543421875" y="2.373603125" size="1.524" layer="21" ratio="15">+</text>
 <text x="-4.31823125" y="2.54" size="1.524" layer="21" ratio="15" rot="R90">-</text>
-<text x="-3.81" y="-3.81" size="1.143" layer="21">RED STRIPE</text>
-<wire x1="-4.445" y1="-3.175" x2="-5.715" y2="-3.175" width="0.3048" layer="21"/>
-<wire x1="-5.08" y1="-2.54" x2="-5.715" y2="-3.175" width="0.3048" layer="21"/>
-<wire x1="-5.715" y1="-3.175" x2="-5.08" y2="-3.81" width="0.3048" layer="21"/>
+<text x="-7.62" y="5.08" size="1.143" layer="21" font="vector" rot="SR270">RED&gt;RED&gt;RED</text>
 </package>
 <package name="0207/7">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
