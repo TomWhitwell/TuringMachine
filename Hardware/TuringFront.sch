@@ -10457,13 +10457,13 @@ DIN A3, landscape with extra doc field</description>
 <part name="R20" library="TomW" deviceset="R-EU_" device="0207/7" value="3.3k"/>
 <part name="C18" library="rcl" deviceset="C-EU" device="050-035X075" value="0.47uf"/>
 <part name="C12" library="TomW" deviceset="C-EU" device="050-024X044" value="1n"/>
-<part name="FRONT_PWR" library="MusicThingModular" deviceset="MA03-2BACKSIDE" device=""/>
+<part name="LINK2" library="MusicThingModular" deviceset="MA03-2BACKSIDE" device=""/>
 <part name="U1" library="MusicThingModular" deviceset="TL074" device="_"/>
-<part name="FRONT_BUS2" library="MusicThingModular" deviceset="MA03-2BACKSIDE" device=""/>
+<part name="LINK1" library="MusicThingModular" deviceset="MA03-2BACKSIDE" device=""/>
 <part name="PULSE_OUT" library="MusicThingModular" deviceset="THONKICONN" device="NEW"/>
 <part name="PULS1" library="TomW" deviceset="LED" device="3MM"/>
 <part name="R17" library="TomW" deviceset="R-EU_" device="0207/7" value="2.2k"/>
-<part name="SV1" library="MusicThingModular" deviceset="10PIN_BACKSIDE" device=""/>
+<part name="LINK3" library="MusicThingModular" deviceset="10PIN_BACKSIDE" device=""/>
 <part name="R1" library="TomW" deviceset="R-EU_" device="0207/7" value="2.2k"/>
 <part name="R4" library="TomW" deviceset="R-EU_" device="0207/7" value="2.2k"/>
 <part name="R6" library="TomW" deviceset="R-EU_" device="0207/7" value="2.2k"/>
@@ -10504,9 +10504,9 @@ DIN A3, landscape with extra doc field</description>
 <instance part="R5" gate="G$1" x="88.9" y="203.2"/>
 <instance part="LENGTH" gate="G$1" x="68.58" y="25.4" rot="R90"/>
 <instance part="CHANGE" gate="G$1" x="66.04" y="228.6"/>
-<instance part="FRONT_PWR" gate="1" x="68.58" y="81.28"/>
-<instance part="FRONT_BUS2" gate="1" x="68.58" y="66.04"/>
-<instance part="SV1" gate="G$1" x="68.58" y="99.06"/>
+<instance part="LINK2" gate="1" x="68.58" y="81.28"/>
+<instance part="LINK1" gate="1" x="68.58" y="66.04"/>
+<instance part="LINK3" gate="G$1" x="68.58" y="99.06"/>
 <instance part="C7" gate="G$1" x="60.96" y="160.02"/>
 <instance part="C8" gate="G$1" x="60.96" y="142.24"/>
 <instance part="C13" gate="G$1" x="71.12" y="160.02"/>
@@ -10587,12 +10587,12 @@ DIN A3, landscape with extra doc field</description>
 <label x="83.82" y="241.3" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="FRONT_PWR" gate="1" pin="6"/>
+<pinref part="LINK2" gate="1" pin="6"/>
 <wire x1="58.42" y1="83.82" x2="60.96" y2="83.82" width="0.1524" layer="91"/>
 <label x="58.42" y="83.82" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="FRONT_PWR" gate="1" pin="5"/>
+<pinref part="LINK2" gate="1" pin="5"/>
 <wire x1="78.74" y1="83.82" x2="76.2" y2="83.82" width="0.1524" layer="91"/>
 <label x="78.74" y="83.82" size="1.016" layer="95" xref="yes"/>
 </segment>
@@ -10638,7 +10638,7 @@ DIN A3, landscape with extra doc field</description>
 <label x="81.28" y="35.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="FRONT_BUS2" gate="1" pin="2"/>
+<pinref part="LINK1" gate="1" pin="2"/>
 <wire x1="58.42" y1="63.5" x2="60.96" y2="63.5" width="0.1524" layer="91"/>
 <label x="58.42" y="63.5" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -10650,7 +10650,7 @@ DIN A3, landscape with extra doc field</description>
 <label x="81.28" y="33.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="FRONT_BUS2" gate="1" pin="3"/>
+<pinref part="LINK1" gate="1" pin="3"/>
 <wire x1="78.74" y1="66.04" x2="76.2" y2="66.04" width="0.1524" layer="91"/>
 <label x="78.74" y="66.04" size="1.016" layer="95" xref="yes"/>
 </segment>
@@ -10713,12 +10713,12 @@ DIN A3, landscape with extra doc field</description>
 <label x="137.16" y="20.32" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="FRONT_PWR" gate="1" pin="4"/>
+<pinref part="LINK2" gate="1" pin="4"/>
 <wire x1="58.42" y1="81.28" x2="60.96" y2="81.28" width="0.1524" layer="91"/>
 <label x="58.42" y="81.28" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="FRONT_PWR" gate="1" pin="3"/>
+<pinref part="LINK2" gate="1" pin="3"/>
 <wire x1="78.74" y1="81.28" x2="76.2" y2="81.28" width="0.1524" layer="91"/>
 <label x="78.74" y="81.28" size="1.016" layer="95" xref="yes"/>
 </segment>
@@ -10886,12 +10886,12 @@ DIN A3, landscape with extra doc field</description>
 <label x="83.82" y="218.44" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="FRONT_PWR" gate="1" pin="2"/>
+<pinref part="LINK2" gate="1" pin="2"/>
 <wire x1="58.42" y1="78.74" x2="60.96" y2="78.74" width="0.1524" layer="91"/>
 <label x="58.42" y="78.74" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="FRONT_PWR" gate="1" pin="1"/>
+<pinref part="LINK2" gate="1" pin="1"/>
 <wire x1="78.74" y1="78.74" x2="76.2" y2="78.74" width="0.1524" layer="91"/>
 <label x="78.74" y="78.74" size="1.016" layer="95" xref="yes"/>
 </segment>
@@ -10927,7 +10927,7 @@ DIN A3, landscape with extra doc field</description>
 <label x="127" y="12.7" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="FRONT_BUS2" gate="1" pin="5"/>
+<pinref part="LINK1" gate="1" pin="5"/>
 <wire x1="78.74" y1="68.58" x2="76.2" y2="68.58" width="0.1524" layer="91"/>
 <label x="78.74" y="68.58" size="1.016" layer="95" xref="yes"/>
 </segment>
@@ -10939,7 +10939,7 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="LENGTH" gate="G$1" pin="A"/>
 </segment>
 <segment>
-<pinref part="FRONT_BUS2" gate="1" pin="6"/>
+<pinref part="LINK1" gate="1" pin="6"/>
 <wire x1="58.42" y1="68.58" x2="60.96" y2="68.58" width="0.1524" layer="91"/>
 <label x="58.42" y="68.58" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -10953,7 +10953,7 @@ DIN A3, landscape with extra doc field</description>
 <segment>
 <wire x1="78.74" y1="93.98" x2="76.2" y2="93.98" width="0.1524" layer="91"/>
 <label x="78.74" y="93.98" size="1.016" layer="95" xref="yes"/>
-<pinref part="SV1" gate="G$1" pin="1"/>
+<pinref part="LINK3" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="B1-MSB"/>
@@ -10975,7 +10975,7 @@ DIN A3, landscape with extra doc field</description>
 <segment>
 <wire x1="78.74" y1="96.52" x2="76.2" y2="96.52" width="0.1524" layer="91"/>
 <label x="78.74" y="96.52" size="1.016" layer="95" xref="yes"/>
-<pinref part="SV1" gate="G$1" pin="3"/>
+<pinref part="LINK3" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="B3"/>
@@ -10997,7 +10997,7 @@ DIN A3, landscape with extra doc field</description>
 <segment>
 <wire x1="58.42" y1="96.52" x2="60.96" y2="96.52" width="0.1524" layer="91"/>
 <label x="58.42" y="96.52" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="SV1" gate="G$1" pin="4"/>
+<pinref part="LINK3" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="B4"/>
@@ -11019,7 +11019,7 @@ DIN A3, landscape with extra doc field</description>
 <segment>
 <wire x1="78.74" y1="99.06" x2="76.2" y2="99.06" width="0.1524" layer="91"/>
 <label x="78.74" y="99.06" size="1.016" layer="95" xref="yes"/>
-<pinref part="SV1" gate="G$1" pin="5"/>
+<pinref part="LINK3" gate="G$1" pin="5"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="B5"/>
@@ -11041,7 +11041,7 @@ DIN A3, landscape with extra doc field</description>
 <segment>
 <wire x1="58.42" y1="99.06" x2="60.96" y2="99.06" width="0.1524" layer="91"/>
 <label x="58.42" y="99.06" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="SV1" gate="G$1" pin="6"/>
+<pinref part="LINK3" gate="G$1" pin="6"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="B6"/>
@@ -11063,7 +11063,7 @@ DIN A3, landscape with extra doc field</description>
 <segment>
 <wire x1="78.74" y1="101.6" x2="76.2" y2="101.6" width="0.1524" layer="91"/>
 <label x="78.74" y="101.6" size="1.016" layer="95" xref="yes"/>
-<pinref part="SV1" gate="G$1" pin="7"/>
+<pinref part="LINK3" gate="G$1" pin="7"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="B7"/>
@@ -11087,7 +11087,7 @@ DIN A3, landscape with extra doc field</description>
 <label x="99.06" y="215.9" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="FRONT_BUS2" gate="1" pin="4"/>
+<pinref part="LINK1" gate="1" pin="4"/>
 <wire x1="58.42" y1="66.04" x2="60.96" y2="66.04" width="0.1524" layer="91"/>
 <label x="58.42" y="66.04" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -11096,7 +11096,7 @@ DIN A3, landscape with extra doc field</description>
 <segment>
 <wire x1="58.42" y1="93.98" x2="60.96" y2="93.98" width="0.1524" layer="91"/>
 <label x="58.42" y="93.98" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="SV1" gate="G$1" pin="2"/>
+<pinref part="LINK3" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="B2"/>
@@ -11113,7 +11113,7 @@ DIN A3, landscape with extra doc field</description>
 <segment>
 <wire x1="58.42" y1="101.6" x2="60.96" y2="101.6" width="0.1524" layer="91"/>
 <label x="58.42" y="101.6" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="SV1" gate="G$1" pin="8"/>
+<pinref part="LINK3" gate="G$1" pin="8"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="B8-LSB"/>
@@ -11130,7 +11130,7 @@ DIN A3, landscape with extra doc field</description>
 <segment>
 <wire x1="78.74" y1="104.14" x2="76.2" y2="104.14" width="0.1524" layer="91"/>
 <label x="78.74" y="104.14" size="1.016" layer="95" xref="yes"/>
-<pinref part="SV1" gate="G$1" pin="9"/>
+<pinref part="LINK3" gate="G$1" pin="9"/>
 </segment>
 <segment>
 <wire x1="172.72" y1="38.1" x2="172.72" y2="30.48" width="0.1524" layer="91"/>
@@ -11152,7 +11152,7 @@ DIN A3, landscape with extra doc field</description>
 </net>
 <net name="NOISE_FRONT" class="0">
 <segment>
-<pinref part="FRONT_BUS2" gate="1" pin="1"/>
+<pinref part="LINK1" gate="1" pin="1"/>
 <wire x1="78.74" y1="63.5" x2="76.2" y2="63.5" width="0.1524" layer="91"/>
 <label x="78.74" y="63.5" size="1.016" layer="95" xref="yes"/>
 </segment>
@@ -11172,7 +11172,7 @@ DIN A3, landscape with extra doc field</description>
 <segment>
 <wire x1="58.42" y1="104.14" x2="60.96" y2="104.14" width="0.1524" layer="91"/>
 <label x="58.42" y="104.14" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="SV1" gate="G$1" pin="10"/>
+<pinref part="LINK3" gate="G$1" pin="10"/>
 </segment>
 <segment>
 <pinref part="PULSE_OUT" gate="G$1" pin="TIP"/>

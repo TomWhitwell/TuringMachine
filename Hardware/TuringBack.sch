@@ -6296,7 +6296,7 @@ Source: http://www.murata.com .. BL01RN1_DS.pdf</description>
 <part name="F2" library="TomW" deviceset="PTC_FUSE" device="POLY_FUSE" value="FUSE"/>
 <part name="L1" library="inductors" deviceset="BL0" device="1RN1A"/>
 <part name="L2" library="inductors" deviceset="BL0" device="1RN1A"/>
-<part name="BACK_PWR" library="con-lstb" deviceset="MA03-2" device=""/>
+<part name="LINK2" library="con-lstb" deviceset="MA03-2" device=""/>
 <part name="R4" library="TomW" deviceset="R-EU_" device="0207/7" value="100k"/>
 <part name="C19" library="TomW" deviceset="C-EU" device="050-024X044" value="100n"/>
 <part name="C20" library="TomW" deviceset="C-EU" device="050-024X044" value="100n"/>
@@ -6305,8 +6305,8 @@ Source: http://www.murata.com .. BL01RN1_DS.pdf</description>
 <part name="C23" library="TomW" deviceset="C-EU" device="050-024X044" value="100n"/>
 <part name="C24" library="TomW" deviceset="C-EU" device="050-024X044" value="100n"/>
 <part name="C25" library="TomW" deviceset="C-EU" device="050-024X044" value="100n"/>
-<part name="BACK_BUS2" library="con-lstb" deviceset="MA03-2" device=""/>
-<part name="BUS_1_BACK" library="con-lstb" deviceset="MA05-2" device=""/>
+<part name="LINK1" library="con-lstb" deviceset="MA03-2" device=""/>
+<part name="LINK3" library="con-lstb" deviceset="MA05-2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6371,9 +6371,9 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <instance part="C6" gate="G$1" x="127" y="99.06"/>
 <instance part="GATES" gate="G$1" x="43.18" y="50.8"/>
 <instance part="PULSES" gate="G$1" x="93.98" y="50.8"/>
-<instance part="BACK_PWR" gate="1" x="157.48" y="35.56"/>
-<instance part="BACK_BUS2" gate="1" x="157.48" y="20.32"/>
-<instance part="BUS_1_BACK" gate="G$1" x="157.48" y="53.34"/>
+<instance part="LINK2" gate="1" x="157.48" y="35.56"/>
+<instance part="LINK1" gate="1" x="157.48" y="20.32"/>
+<instance part="LINK3" gate="G$1" x="157.48" y="53.34"/>
 <instance part="AND_2" gate="C" x="215.9" y="109.22"/>
 <instance part="AND_2" gate="D" x="218.44" y="86.36"/>
 <instance part="AND_2" gate="B" x="218.44" y="66.04"/>
@@ -6435,7 +6435,7 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <label x="190.5" y="200.66" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="BACK_BUS2" gate="1" pin="5"/>
+<pinref part="LINK1" gate="1" pin="5"/>
 <wire x1="167.64" y1="22.86" x2="165.1" y2="22.86" width="0.1524" layer="91"/>
 <label x="167.64" y="22.86" size="1.016" layer="95" xref="yes"/>
 </segment>
@@ -6462,7 +6462,7 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <junction x="76.2" y="256.54"/>
 </segment>
 <segment>
-<pinref part="BACK_BUS2" gate="1" pin="6"/>
+<pinref part="LINK1" gate="1" pin="6"/>
 <wire x1="147.32" y1="22.86" x2="149.86" y2="22.86" width="0.1524" layer="91"/>
 <label x="147.32" y="22.86" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -6600,12 +6600,12 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <label x="33.02" y="60.96" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="BACK_PWR" gate="1" pin="6"/>
+<pinref part="LINK2" gate="1" pin="6"/>
 <wire x1="147.32" y1="38.1" x2="149.86" y2="38.1" width="0.1524" layer="91"/>
 <label x="147.32" y="38.1" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="BACK_PWR" gate="1" pin="5"/>
+<pinref part="LINK2" gate="1" pin="5"/>
 <wire x1="167.64" y1="38.1" x2="165.1" y2="38.1" width="0.1524" layer="91"/>
 <label x="167.64" y="38.1" size="1.016" layer="95" xref="yes"/>
 </segment>
@@ -6800,12 +6800,12 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <label x="33.02" y="58.42" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="BACK_PWR" gate="1" pin="4"/>
+<pinref part="LINK2" gate="1" pin="4"/>
 <wire x1="147.32" y1="35.56" x2="149.86" y2="35.56" width="0.1524" layer="91"/>
 <label x="147.32" y="35.56" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="BACK_PWR" gate="1" pin="3"/>
+<pinref part="LINK2" gate="1" pin="3"/>
 <wire x1="167.64" y1="35.56" x2="165.1" y2="35.56" width="0.1524" layer="91"/>
 <label x="167.64" y="35.56" size="1.016" layer="95" xref="yes"/>
 </segment>
@@ -6827,7 +6827,7 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <label x="5.08" y="215.9" size="1.016" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="BACK_BUS2" gate="1" pin="4"/>
+<pinref part="LINK1" gate="1" pin="4"/>
 <wire x1="147.32" y1="20.32" x2="149.86" y2="20.32" width="0.1524" layer="91"/>
 <label x="147.32" y="20.32" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -6856,7 +6856,7 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <segment>
 <wire x1="167.64" y1="58.42" x2="165.1" y2="58.42" width="0.1524" layer="91"/>
 <label x="167.64" y="58.42" size="1.016" layer="95" xref="yes"/>
-<pinref part="BUS_1_BACK" gate="G$1" pin="9"/>
+<pinref part="LINK3" gate="G$1" pin="9"/>
 </segment>
 <segment>
 <wire x1="203.2" y1="17.78" x2="218.44" y2="17.78" width="0.1524" layer="91"/>
@@ -6876,7 +6876,7 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <label x="289.56" y="157.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="BACK_BUS2" gate="1" pin="2"/>
+<pinref part="LINK1" gate="1" pin="2"/>
 <wire x1="147.32" y1="17.78" x2="149.86" y2="17.78" width="0.1524" layer="91"/>
 <label x="147.32" y="17.78" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -6895,7 +6895,7 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <label x="238.76" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="BACK_BUS2" gate="1" pin="3"/>
+<pinref part="LINK1" gate="1" pin="3"/>
 <wire x1="167.64" y1="20.32" x2="165.1" y2="20.32" width="0.1524" layer="91"/>
 <label x="167.64" y="20.32" size="1.016" layer="95" xref="yes"/>
 </segment>
@@ -6911,7 +6911,7 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <segment>
 <wire x1="167.64" y1="48.26" x2="165.1" y2="48.26" width="0.1524" layer="91"/>
 <label x="167.64" y="48.26" size="1.016" layer="95" xref="yes"/>
-<pinref part="BUS_1_BACK" gate="G$1" pin="1"/>
+<pinref part="LINK3" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="AND_2" gate="C" pin="I0"/>
@@ -6933,7 +6933,7 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <segment>
 <wire x1="147.32" y1="48.26" x2="149.86" y2="48.26" width="0.1524" layer="91"/>
 <label x="147.32" y="48.26" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="BUS_1_BACK" gate="G$1" pin="2"/>
+<pinref part="LINK3" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="AND_2" gate="D" pin="I0"/>
@@ -6955,7 +6955,7 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <segment>
 <wire x1="167.64" y1="50.8" x2="165.1" y2="50.8" width="0.1524" layer="91"/>
 <label x="167.64" y="50.8" size="1.016" layer="95" xref="yes"/>
-<pinref part="BUS_1_BACK" gate="G$1" pin="3"/>
+<pinref part="LINK3" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <pinref part="AND_2" gate="B" pin="I0"/>
@@ -6977,7 +6977,7 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <segment>
 <wire x1="147.32" y1="50.8" x2="149.86" y2="50.8" width="0.1524" layer="91"/>
 <label x="147.32" y="50.8" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="BUS_1_BACK" gate="G$1" pin="4"/>
+<pinref part="LINK3" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <pinref part="AND_2" gate="A" pin="I0"/>
@@ -7001,7 +7001,7 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <segment>
 <wire x1="167.64" y1="53.34" x2="165.1" y2="53.34" width="0.1524" layer="91"/>
 <label x="167.64" y="53.34" size="1.016" layer="95" xref="yes"/>
-<pinref part="BUS_1_BACK" gate="G$1" pin="5"/>
+<pinref part="LINK3" gate="G$1" pin="5"/>
 </segment>
 <segment>
 <pinref part="AND_1" gate="D" pin="I0"/>
@@ -7023,7 +7023,7 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <segment>
 <wire x1="147.32" y1="53.34" x2="149.86" y2="53.34" width="0.1524" layer="91"/>
 <label x="147.32" y="53.34" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="BUS_1_BACK" gate="G$1" pin="6"/>
+<pinref part="LINK3" gate="G$1" pin="6"/>
 </segment>
 <segment>
 <pinref part="AND_1" gate="C" pin="I0"/>
@@ -7045,7 +7045,7 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <segment>
 <wire x1="167.64" y1="55.88" x2="165.1" y2="55.88" width="0.1524" layer="91"/>
 <label x="167.64" y="55.88" size="1.016" layer="95" xref="yes"/>
-<pinref part="BUS_1_BACK" gate="G$1" pin="7"/>
+<pinref part="LINK3" gate="G$1" pin="7"/>
 </segment>
 <segment>
 <pinref part="AND_1" gate="B" pin="I0"/>
@@ -7067,7 +7067,7 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <segment>
 <wire x1="147.32" y1="55.88" x2="149.86" y2="55.88" width="0.1524" layer="91"/>
 <label x="147.32" y="55.88" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="BUS_1_BACK" gate="G$1" pin="8"/>
+<pinref part="LINK3" gate="G$1" pin="8"/>
 </segment>
 <segment>
 <pinref part="AND_1" gate="A" pin="I0"/>
@@ -7106,7 +7106,7 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <label x="35.56" y="243.84" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="BACK_BUS2" gate="1" pin="1"/>
+<pinref part="LINK1" gate="1" pin="1"/>
 <wire x1="167.64" y1="17.78" x2="165.1" y2="17.78" width="0.1524" layer="91"/>
 <label x="167.64" y="17.78" size="1.016" layer="95" xref="yes"/>
 </segment>
@@ -7183,12 +7183,12 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <label x="33.02" y="55.88" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="BACK_PWR" gate="1" pin="2"/>
+<pinref part="LINK2" gate="1" pin="2"/>
 <wire x1="147.32" y1="33.02" x2="149.86" y2="33.02" width="0.1524" layer="91"/>
 <label x="147.32" y="33.02" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="BACK_PWR" gate="1" pin="1"/>
+<pinref part="LINK2" gate="1" pin="1"/>
 <wire x1="167.64" y1="33.02" x2="165.1" y2="33.02" width="0.1524" layer="91"/>
 <label x="167.64" y="33.02" size="1.016" layer="95" xref="yes"/>
 </segment>
@@ -7524,7 +7524,7 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <segment>
 <wire x1="147.32" y1="58.42" x2="149.86" y2="58.42" width="0.1524" layer="91"/>
 <label x="147.32" y="58.42" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="BUS_1_BACK" gate="G$1" pin="10"/>
+<pinref part="LINK3" gate="G$1" pin="10"/>
 </segment>
 <segment>
 <pinref part="BUFFER2" gate="F" pin="O"/>
