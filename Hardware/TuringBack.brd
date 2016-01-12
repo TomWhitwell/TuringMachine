@@ -13,21 +13,21 @@
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="10" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -39,7 +39,7 @@
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -134,9 +134,15 @@
 <wire x1="107" y1="0" x2="107" y2="49.5" width="0" layer="20"/>
 <wire x1="107" y1="49.5" x2="0" y2="49.5" width="0" layer="20"/>
 <wire x1="-15.875" y1="24.75" x2="121.285" y2="24.75" width="0.05" layer="51"/>
-<text x="98.425" y="1.27" size="1.016" layer="22" font="vector" rot="SMR90">Music Thing Modular Turing Machine 
+<text x="84.455" y="27.305" size="1.016" layer="22" font="vector" rot="SMR0">Music Thing Modular Turing Machine 
 Rev4  Back Board
+
+
+
 Designed in Herne Hill, London By Tom Whitwell 
+
+
+
 January 2016 CC-BY-SA 
 musicthing.co.uk</text>
 <text x="17.907" y="17.78" size="0.762" layer="21" rot="R20" align="center">FERRITE
@@ -852,6 +858,29 @@ BEAD</text>
 <vertex x="23.8633" y="19.8374"/>
 </polygon>
 <text x="84.455" y="13.97" size="2.286" layer="22" rot="MR0">EXPANDER OUTPUTS ONLY</text>
+<text x="104.127234375" y="27.377475" size="1.016" layer="30" ratio="12" rot="MR90">Don Buchla</text>
+<text x="98.627628125" y="31.972203125" size="1.016" layer="30" ratio="12" rot="MR90">Ken Stone</text>
+<text x="100.630615625" y="27.0115" size="1.016" layer="30" ratio="12" rot="MR90">Grant Richter</text>
+<text x="105.605978125" y="18.229196875" size="1.016" layer="30" ratio="12" rot="MR90">Hal Chamberlin</text>
+<text x="102.2196125" y="21.173090625" size="1.016" layer="30" ratio="12" rot="MR90">Allen Strange</text>
+<text x="94.02604375" y="33.508940625" size="1.016" layer="30" ratio="12" rot="MR90">Fredkin &amp; Minsky</text>
+<text x="96.389121875" y="35.142478125" size="1.016" layer="30" ratio="12" rot="MR90">Nicholas Collins</text>
+<text x="98.4197375" y="10.113390625" size="1.016" layer="30" ratio="12" rot="MR90">Navs</text>
+<text x="90.79385" y="42.12758125" size="1.016" layer="30" ratio="12" rot="MR90">Lunetta</text>
+<text x="99.34384375" y="15.06238125" size="1.016" layer="30" ratio="12" rot="MR90">Dieter Doepfer</text>
+<text x="105.269009375" y="36.180021875" size="1.016" layer="30" ratio="12" rot="MR90">Philip Glass</text>
+<text x="103.112259375" y="38.498478125" size="1.016" layer="30" ratio="12" rot="MR90">Steve Reich</text>
+<text x="103.34131875" y="1.8847875" size="1.016" layer="30" ratio="12" rot="MR90">Steven Grimley-Taylor</text>
+<text x="92.112265625" y="39.271515625" size="1.016" layer="30" ratio="12" rot="MR90">Stanley</text>
+<text x="101.038353125" y="5.615478125" size="1.016" layer="30" ratio="12" rot="MR90">The Muff Wigglers</text>
+<text x="96.4004875" y="14.234275" size="1.016" layer="30" ratio="12" rot="MR90">K.F.W</text>
+<text x="101.271" y="39.003278125" size="1.016" layer="30" ratio="12" rot="MR90">John</text>
+<text x="100.1762625" y="39.752578125" size="1.016" layer="30" ratio="12" rot="MR90">Cage</text>
+<text x="99.302259375" y="44.213478125" size="1.016" layer="30" ratio="12" rot="MR90">Terry 
+Riley</text>
+<text x="105.605978125" y="2.354196875" size="1.016" layer="30" ratio="12" rot="MR90">Inspired by:</text>
+<text x="94.4954875" y="9.154275" size="1.016" layer="30" ratio="12" rot="MR90">Tony 
+Steventon</text>
 </plain>
 <libraries>
 <library name="40xx">

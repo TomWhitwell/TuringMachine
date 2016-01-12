@@ -18,13 +18,13 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -1983,7 +1983,9 @@ design rules under a new name.</description>
 <element name="CHANGE" library="MusicThingModular" package="9MM_SNAP-IN_POT" value="50k" x="77.47" y="24.765" rot="R270"/>
 <element name="SCALE" library="MusicThingModular" package="9MM_SNAP-IN_POT" value="50k" x="22.86" y="6.35" locked="yes" rot="R270"/>
 <element name="C17" library="TomW" package="C050-024X044" value="1n" x="64.77" y="15.24" rot="R90"/>
-<element name="TL431" library="TomW" package="TO92-CLP" value="" x="76.2" y="7.62" rot="R270"/>
+<element name="TL431" library="TomW" package="TO92-CLP" value="" x="76.2" y="7.62" smashed="yes" rot="R270">
+<attribute name="NAME" x="80.645" y="7.62" size="1.524" layer="25" ratio="10" rot="R270" align="top-center"/>
+</element>
 <element name="R20" library="TomW" package="0207/7" value="3.3k" x="69.85" y="5.08" rot="R90"/>
 <element name="C18" library="rcl" package="C050-035X075" value="0.47uf" x="49.53" y="15.24" rot="R90"/>
 <element name="C12" library="TomW" package="C050-024X044" value="1n" x="41.275" y="6.35" rot="R90"/>
@@ -2002,9 +2004,9 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="unknown" x="95.25" y="24.765" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R1" library="TomW" package="0207/7" value="2.2k" x="85.725" y="17.145" rot="R180"/>
-<element name="R4" library="TomW" package="0207/7" value="2.2k" x="85.725" y="13.335" rot="R180"/>
-<element name="R6" library="TomW" package="0207/7" value="2.2k" x="85.725" y="9.525" rot="R180"/>
-<element name="R8" library="TomW" package="0207/7" value="2.2k" x="85.725" y="5.715" rot="R180"/>
+<element name="R4" library="TomW" package="0207/7" value="2.2k" x="85.725" y="14.605" rot="R180"/>
+<element name="R6" library="TomW" package="0207/7" value="2.2k" x="85.725" y="12.065" rot="R180"/>
+<element name="R8" library="TomW" package="0207/7" value="2.2k" x="85.725" y="9.525" rot="R180"/>
 <element name="R14" library="TomW" package="0207/7" value="2.2k" x="97.79" y="17.145"/>
 <element name="R15" library="TomW" package="0207/7" value="2.2k" x="97.79" y="14.605"/>
 <element name="R16" library="TomW" package="0207/7" value="2.2k" x="97.79" y="12.065"/>
@@ -2506,7 +2508,8 @@ design rules under a new name.</description>
 <wire x1="103.505" y1="38.735" x2="99.06" y2="34.29" width="0.254" layer="16"/>
 <wire x1="99.06" y1="34.29" x2="99.06" y2="14.605" width="0.254" layer="16"/>
 <wire x1="99.06" y1="14.605" x2="97.79" y2="13.335" width="0.254" layer="16"/>
-<wire x1="97.79" y1="13.335" x2="89.535" y2="13.335" width="0.254" layer="16"/>
+<wire x1="97.79" y1="13.335" x2="90.805" y2="13.335" width="0.254" layer="16"/>
+<wire x1="90.805" y1="13.335" x2="89.535" y2="14.605" width="0.254" layer="16"/>
 </signal>
 <signal name="N$32">
 <contactref element="6" pad="K"/>
@@ -2516,7 +2519,7 @@ design rules under a new name.</description>
 <wire x1="99.695" y1="33.655" x2="99.695" y2="13.335" width="0.254" layer="16"/>
 <wire x1="99.695" y1="13.335" x2="97.155" y2="10.795" width="0.254" layer="16"/>
 <wire x1="97.155" y1="10.795" x2="90.805" y2="10.795" width="0.254" layer="16"/>
-<wire x1="90.805" y1="10.795" x2="89.535" y2="9.525" width="0.254" layer="16"/>
+<wire x1="90.805" y1="10.795" x2="89.535" y2="12.065" width="0.254" layer="16"/>
 </signal>
 <signal name="N$33">
 <contactref element="5" pad="K"/>
@@ -2525,8 +2528,8 @@ design rules under a new name.</description>
 <wire x1="101.6" y1="29.21" x2="100.33" y2="27.94" width="0.254" layer="16"/>
 <wire x1="100.33" y1="27.94" x2="100.33" y2="10.795" width="0.254" layer="16"/>
 <wire x1="100.33" y1="10.795" x2="97.79" y2="8.255" width="0.254" layer="16"/>
-<wire x1="97.79" y1="8.255" x2="92.075" y2="8.255" width="0.254" layer="16"/>
-<wire x1="92.075" y1="8.255" x2="89.535" y2="5.715" width="0.254" layer="16"/>
+<wire x1="97.79" y1="8.255" x2="90.805" y2="8.255" width="0.254" layer="16"/>
+<wire x1="90.805" y1="8.255" x2="89.535" y2="9.525" width="0.254" layer="16"/>
 </signal>
 <signal name="N$34">
 <contactref element="4" pad="K"/>
@@ -2696,7 +2699,6 @@ design rules under a new name.</description>
 <contactref element="R10" pad="1"/>
 <contactref element="U1" pad="10"/>
 <contactref element="R9" pad="1"/>
-<contactref element="U1" pad="3"/>
 <contactref element="CV_OUT" pad="P$3_SLEEVE"/>
 <contactref element="R12" pad="2"/>
 <contactref element="C15" pad="1"/>
@@ -2731,6 +2733,10 @@ design rules under a new name.</description>
 <vertex x="-1.27" y="-1.27"/>
 <vertex x="-1.27" y="50.8"/>
 </polygon>
+<contactref element="U1" pad="3"/>
+<wire x1="93.98" y1="12.065" x2="93.98" y2="9.525" width="0" layer="19" extent="1-1"/>
+<wire x1="93.98" y1="14.605" x2="93.98" y2="12.065" width="0" layer="19" extent="1-1"/>
+<wire x1="93.98" y1="17.145" x2="93.98" y2="14.605" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="WRITE_SW_FRONT">
 <contactref element="R18" pad="2"/>
