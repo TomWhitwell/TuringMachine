@@ -6292,8 +6292,8 @@ Source: http://www.murata.com .. BL01RN1_DS.pdf</description>
 <part name="SV1" library="TomW" deviceset="10_PIN_HEADER" device=""/>
 <part name="D5" library="diode" deviceset="1N4004" device="" value="1N4001"/>
 <part name="D6" library="diode" deviceset="1N4004" device="" value="1N4001"/>
-<part name="F1" library="TomW" deviceset="PTC_FUSE" device="POLY_FUSE" value="FUSE"/>
-<part name="F2" library="TomW" deviceset="PTC_FUSE" device="POLY_FUSE" value="FUSE"/>
+<part name="+FUSE" library="TomW" deviceset="PTC_FUSE" device="POLY_FUSE" value="+FUSE"/>
+<part name="-FUSE" library="TomW" deviceset="PTC_FUSE" device="POLY_FUSE" value="-FUSE"/>
 <part name="L1" library="inductors" deviceset="BL0" device="1RN1A"/>
 <part name="L2" library="inductors" deviceset="BL0" device="1RN1A"/>
 <part name="LINK2" library="con-lstb" deviceset="MA03-2" device=""/>
@@ -6363,8 +6363,8 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <instance part="SV1" gate="G$1" x="35.56" y="101.6"/>
 <instance part="D5" gate="1" x="83.82" y="109.22" rot="R90"/>
 <instance part="D6" gate="1" x="83.82" y="96.52" rot="R90"/>
-<instance part="F1" gate="G$1" x="93.98" y="114.3"/>
-<instance part="F2" gate="G$1" x="93.98" y="91.44"/>
+<instance part="+FUSE" gate="G$1" x="93.98" y="114.3"/>
+<instance part="-FUSE" gate="G$1" x="93.98" y="91.44"/>
 <instance part="L1" gate="G$1" x="113.03" y="114.3"/>
 <instance part="L2" gate="G$1" x="113.03" y="91.44"/>
 <instance part="C5" gate="G$1" x="127" y="110.49"/>
@@ -7205,7 +7205,7 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <label x="45.72" y="106.68" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="F1" gate="G$1" pin="P$1"/>
+<pinref part="+FUSE" gate="G$1" pin="P$1"/>
 <pinref part="D5" gate="1" pin="C"/>
 <wire x1="88.9" y1="114.3" x2="83.82" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="114.3" x2="83.82" y2="111.76" width="0.1524" layer="91"/>
@@ -7226,7 +7226,7 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <label x="25.4" y="96.52" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="F2" gate="G$1" pin="P$1"/>
+<pinref part="-FUSE" gate="G$1" pin="P$1"/>
 <wire x1="73.66" y1="91.44" x2="83.82" y2="91.44" width="0.1524" layer="91"/>
 <label x="73.66" y="91.44" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="D6" gate="1" pin="A"/>
@@ -7238,13 +7238,13 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <net name="N$42" class="1">
 <segment>
 <pinref part="L1" gate="G$1" pin="1"/>
-<pinref part="F1" gate="G$1" pin="P$2"/>
+<pinref part="+FUSE" gate="G$1" pin="P$2"/>
 <wire x1="107.95" y1="114.3" x2="99.06" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$44" class="1">
 <segment>
-<pinref part="F2" gate="G$1" pin="P$2"/>
+<pinref part="-FUSE" gate="G$1" pin="P$2"/>
 <pinref part="L2" gate="G$1" pin="1"/>
 <wire x1="107.95" y1="91.44" x2="99.06" y2="91.44" width="0.1524" layer="91"/>
 </segment>
