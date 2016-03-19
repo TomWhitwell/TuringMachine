@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -8,7 +8,7 @@
 </settings>
 <grid distance="25" unitdist="mil" unit="mil" style="dots" multiple="1" display="no" altdistance="10" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
@@ -1885,94 +1885,46 @@ design rules under a new name.</description>
 <wire x1="61.595" y1="44.45" x2="59.69" y2="46.355" width="0.254" layer="16"/>
 </signal>
 <signal name="PULSE1">
-<contactref element="AND_2" pad="10"/>
 <contactref element="PULSES" pad="1"/>
 <contactref element="BUFFER2" pad="14"/>
-<wire x1="80.01" y1="11.43" x2="76.2" y2="15.24" width="0.254" layer="1"/>
-<wire x1="76.2" y1="15.24" x2="46.99" y2="15.24" width="0.254" layer="1"/>
-<wire x1="41.91" y1="4.445" x2="41.91" y2="9.525" width="0.254" layer="16"/>
-<wire x1="46.99" y1="11.43" x2="46.99" y2="15.24" width="0.254" layer="16"/>
-<via x="46.99" y="15.24" extent="1-16" drill="0.3302"/>
-<wire x1="41.91" y1="9.525" x2="45.085" y2="9.525" width="0.254" layer="1"/>
-<wire x1="45.085" y1="9.525" x2="46.99" y2="11.43" width="0.254" layer="1"/>
-<via x="41.91" y="9.525" extent="1-16" drill="0.3302"/>
+<contactref element="AND_1" pad="3"/>
+<wire x1="52.07" y1="32.385" x2="80.01" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="41.91" y1="4.445" x2="52.07" y2="32.385" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PULSE2">
-<contactref element="AND_2" pad="11"/>
 <contactref element="PULSES" pad="2"/>
-<wire x1="41.91" y1="1.905" x2="43.18" y2="0.635" width="0.254" layer="16"/>
-<wire x1="43.18" y1="0.635" x2="47.625" y2="0.635" width="0.254" layer="16"/>
-<wire x1="47.625" y1="0.635" x2="48.26" y2="1.27" width="0.254" layer="16"/>
-<wire x1="48.26" y1="1.27" x2="48.26" y2="5.08" width="0.254" layer="16"/>
-<wire x1="48.26" y1="5.08" x2="49.53" y2="6.35" width="0.254" layer="16"/>
-<wire x1="49.53" y1="6.35" x2="49.53" y2="11.43" width="0.254" layer="16"/>
+<contactref element="AND_1" pad="4"/>
+<wire x1="41.91" y1="1.905" x2="49.53" y2="32.385" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PULSE4">
-<contactref element="AND_2" pad="3"/>
 <contactref element="PULSES" pad="4"/>
-<wire x1="44.45" y1="1.905" x2="43.815" y2="1.905" width="0.254" layer="16"/>
-<wire x1="43.815" y1="1.905" x2="43.18" y2="2.54" width="0.254" layer="16"/>
-<wire x1="43.18" y1="2.54" x2="43.18" y2="15.875" width="0.254" layer="16"/>
-<wire x1="43.18" y1="15.875" x2="49.53" y2="15.875" width="0.254" layer="1"/>
-<wire x1="49.53" y1="15.875" x2="52.07" y2="19.05" width="0.254" layer="1"/>
-<via x="43.18" y="15.875" extent="1-16" drill="0.3302"/>
+<contactref element="AND_1" pad="11"/>
+<wire x1="44.45" y1="1.905" x2="49.53" y2="24.765" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PULSE3">
-<contactref element="AND_2" pad="4"/>
 <contactref element="PULSES" pad="3"/>
-<wire x1="44.45" y1="4.445" x2="44.45" y2="8.89" width="0.254" layer="16"/>
-<wire x1="44.45" y1="8.89" x2="48.26" y2="8.89" width="0.254" layer="1"/>
-<wire x1="48.26" y1="8.89" x2="48.26" y2="15.875" width="0.254" layer="16"/>
-<wire x1="48.26" y1="15.875" x2="49.53" y2="17.145" width="0.254" layer="16"/>
-<wire x1="49.53" y1="17.145" x2="49.53" y2="19.05" width="0.254" layer="16"/>
-<via x="44.45" y="8.89" extent="1-16" drill="0.3302"/>
-<via x="48.26" y="8.89" extent="1-16" drill="0.3302"/>
+<contactref element="AND_1" pad="10"/>
+<wire x1="44.45" y1="4.445" x2="46.99" y2="24.765" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PULSE5">
-<contactref element="AND_1" pad="11"/>
 <contactref element="PULSES" pad="5"/>
-<wire x1="46.99" y1="4.445" x2="46.99" y2="5.08" width="0.254" layer="1"/>
-<wire x1="46.99" y1="5.08" x2="46.355" y2="5.715" width="0.254" layer="1"/>
-<wire x1="46.355" y1="5.715" x2="40.64" y2="5.715" width="0.254" layer="1"/>
-<via x="40.64" y="5.715" extent="1-16" drill="0.3302"/>
-<via x="40.64" y="15.24" extent="1-16" drill="0.3302"/>
-<wire x1="40.64" y1="5.715" x2="40.64" y2="15.24" width="0.254" layer="16"/>
-<wire x1="49.53" y1="24.765" x2="45.72" y2="20.955" width="0.254" layer="1"/>
-<wire x1="45.72" y1="20.955" x2="45.72" y2="17.78" width="0.254" layer="1"/>
-<wire x1="45.72" y1="17.78" x2="44.45" y2="16.51" width="0.254" layer="1"/>
-<wire x1="44.45" y1="16.51" x2="41.91" y2="16.51" width="0.254" layer="1"/>
-<wire x1="41.91" y1="16.51" x2="40.64" y2="15.24" width="0.254" layer="1"/>
+<contactref element="AND_2" pad="3"/>
+<wire x1="46.99" y1="4.445" x2="52.07" y2="19.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PULSE6">
-<contactref element="AND_1" pad="10"/>
 <contactref element="PULSES" pad="6"/>
-<wire x1="46.99" y1="1.905" x2="46.355" y2="1.905" width="0.254" layer="16"/>
-<wire x1="46.355" y1="1.905" x2="45.72" y2="2.54" width="0.254" layer="16"/>
-<wire x1="45.72" y1="2.54" x2="45.72" y2="21.59" width="0.254" layer="16"/>
-<wire x1="45.72" y1="21.59" x2="46.99" y2="22.86" width="0.254" layer="16"/>
-<wire x1="46.99" y1="22.86" x2="46.99" y2="24.765" width="0.254" layer="16"/>
+<contactref element="AND_2" pad="4"/>
+<wire x1="46.99" y1="1.905" x2="49.53" y2="19.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PULSE7">
-<contactref element="AND_1" pad="4"/>
 <contactref element="PULSES" pad="7"/>
-<wire x1="49.53" y1="4.445" x2="50.8" y2="5.715" width="0.254" layer="1"/>
-<wire x1="49.53" y1="36.195" x2="60.96" y2="36.195" width="0.254" layer="1"/>
-<via x="49.53" y="36.195" extent="1-16" drill="0.3302"/>
-<via x="60.96" y="36.195" extent="1-16" drill="0.3302"/>
-<wire x1="49.53" y1="32.385" x2="49.53" y2="36.195" width="0.254" layer="16"/>
-<wire x1="50.8" y1="5.715" x2="61.595" y2="5.715" width="0.254" layer="1"/>
-<wire x1="61.595" y1="5.715" x2="61.595" y2="35.56" width="0.254" layer="16"/>
-<wire x1="61.595" y1="35.56" x2="60.96" y2="36.195" width="0.254" layer="16"/>
-<via x="61.595" y="5.715" extent="1-16" drill="0.3302"/>
+<contactref element="AND_2" pad="11"/>
+<wire x1="49.53" y1="4.445" x2="49.53" y2="11.43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PULSE8">
-<contactref element="AND_1" pad="3"/>
 <contactref element="PULSES" pad="8"/>
-<wire x1="49.53" y1="1.905" x2="50.8" y2="2.54" width="0.254" layer="16"/>
-<wire x1="50.8" y1="2.54" x2="50.8" y2="6.985" width="0.254" layer="16"/>
-<wire x1="52.07" y1="32.385" x2="53.34" y2="31.115" width="0.254" layer="16"/>
-<wire x1="53.34" y1="31.115" x2="53.34" y2="9.525" width="0.254" layer="16"/>
-<wire x1="50.8" y1="6.985" x2="53.34" y2="9.525" width="0.254" layer="16"/>
+<contactref element="AND_2" pad="10"/>
+<wire x1="49.53" y1="1.905" x2="46.99" y2="11.43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BUFFCLK2_BACK">
 <contactref element="BUFFER1" pad="2"/>
@@ -2002,88 +1954,44 @@ design rules under a new name.</description>
 <wire x1="82.55" y1="27.305" x2="82.55" y2="32.385" width="0.254" layer="16"/>
 </signal>
 <signal name="GATE1">
-<contactref element="BUFFER2" pad="10"/>
 <contactref element="GATES" pad="1"/>
-<wire x1="69.85" y1="11.43" x2="67.945" y2="9.525" width="0.254" layer="1"/>
-<wire x1="67.945" y1="9.525" x2="65.405" y2="9.525" width="0.254" layer="1"/>
-<wire x1="65.405" y1="9.525" x2="65.405" y2="4.445" width="0.254" layer="16"/>
-<wire x1="65.405" y1="4.445" x2="67.31" y2="4.445" width="0.254" layer="1"/>
-<via x="65.405" y="9.525" extent="1-16" drill="0.3302"/>
-<via x="65.405" y="4.445" extent="1-16" drill="0.3302"/>
+<contactref element="BUFFER1" pad="4"/>
+<wire x1="67.31" y1="4.445" x2="77.47" y2="32.385" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GATE2">
-<contactref element="BUFFER2" pad="12"/>
 <contactref element="GATES" pad="2"/>
-<wire x1="74.93" y1="11.43" x2="72.39" y2="8.89" width="0.254" layer="1"/>
-<wire x1="72.39" y1="8.89" x2="64.77" y2="8.89" width="0.254" layer="1"/>
-<wire x1="67.31" y1="1.905" x2="64.77" y2="1.905" width="0.254" layer="1"/>
-<via x="64.77" y="8.89" extent="1-16" drill="0.3302"/>
-<wire x1="64.77" y1="1.905" x2="64.77" y2="8.89" width="0.254" layer="16"/>
-<via x="64.77" y="1.905" extent="1-16" drill="0.3302"/>
+<contactref element="BUFFER1" pad="6"/>
+<wire x1="67.31" y1="1.905" x2="72.39" y2="32.385" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GATE3">
-<contactref element="BUFFER2" pad="6"/>
 <contactref element="GATES" pad="3"/>
-<wire x1="69.85" y1="4.445" x2="70.485" y2="4.445" width="0.254" layer="16"/>
-<wire x1="70.485" y1="4.445" x2="71.12" y2="5.08" width="0.254" layer="16"/>
-<wire x1="71.12" y1="5.08" x2="71.12" y2="13.335" width="0.254" layer="16"/>
-<wire x1="71.12" y1="13.335" x2="72.39" y2="14.605" width="0.254" layer="16"/>
-<wire x1="72.39" y1="14.605" x2="72.39" y2="19.05" width="0.254" layer="16"/>
+<contactref element="BUFFER1" pad="10"/>
+<wire x1="69.85" y1="4.445" x2="69.85" y2="24.765" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GATE4">
-<contactref element="BUFFER2" pad="4"/>
 <contactref element="GATES" pad="4"/>
-<wire x1="77.47" y1="19.05" x2="75.565" y2="16.51" width="0.254" layer="1"/>
-<wire x1="75.565" y1="16.51" x2="68.58" y2="16.51" width="0.254" layer="1"/>
-<wire x1="69.85" y1="1.905" x2="69.215" y2="1.905" width="0.254" layer="16"/>
-<wire x1="69.215" y1="1.905" x2="68.58" y2="2.54" width="0.254" layer="16"/>
-<via x="68.58" y="16.51" extent="1-16" drill="0.3302"/>
-<wire x1="68.58" y1="2.54" x2="68.58" y2="16.51" width="0.254" layer="16"/>
+<contactref element="BUFFER1" pad="12"/>
+<wire x1="69.85" y1="1.905" x2="74.93" y2="24.765" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GATE5">
-<contactref element="BUFFER1" pad="12"/>
 <contactref element="GATES" pad="5"/>
-<wire x1="74.93" y1="24.765" x2="73.025" y2="26.67" width="0.254" layer="1"/>
-<wire x1="73.025" y1="26.67" x2="63.5" y2="26.67" width="0.254" layer="1"/>
-<wire x1="63.5" y1="26.67" x2="63.5" y2="5.715" width="0.254" layer="16"/>
-<wire x1="63.5" y1="5.715" x2="71.12" y2="5.715" width="0.254" layer="1"/>
-<via x="63.5" y="26.67" extent="1-16" drill="0.3302"/>
-<via x="63.5" y="5.715" extent="1-16" drill="0.3302"/>
-<wire x1="72.39" y1="4.445" x2="71.12" y2="5.715" width="0.254" layer="1"/>
+<contactref element="BUFFER2" pad="4"/>
+<wire x1="72.39" y1="4.445" x2="77.47" y2="19.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GATE6">
-<contactref element="BUFFER1" pad="10"/>
 <contactref element="GATES" pad="6"/>
-<wire x1="72.39" y1="1.905" x2="72.39" y2="1.27" width="0.254" layer="16"/>
-<wire x1="72.39" y1="1.27" x2="71.755" y2="0.635" width="0.254" layer="16"/>
-<wire x1="69.85" y1="24.765" x2="67.945" y2="22.86" width="0.254" layer="1"/>
-<wire x1="67.945" y1="22.86" x2="64.135" y2="22.86" width="0.254" layer="1"/>
-<wire x1="64.135" y1="22.86" x2="64.135" y2="0.635" width="0.254" layer="16"/>
-<wire x1="64.135" y1="0.635" x2="71.755" y2="0.635" width="0.254" layer="16"/>
-<via x="64.135" y="22.86" extent="1-16" drill="0.3302"/>
+<contactref element="BUFFER2" pad="6"/>
+<wire x1="72.39" y1="1.905" x2="72.39" y2="19.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GATE7">
-<contactref element="BUFFER1" pad="6"/>
 <contactref element="GATES" pad="7"/>
-<wire x1="72.39" y1="32.385" x2="72.39" y2="36.195" width="0.254" layer="16"/>
-<wire x1="74.93" y1="4.445" x2="73.025" y2="6.35" width="0.254" layer="1"/>
-<wire x1="73.025" y1="6.35" x2="62.23" y2="6.35" width="0.254" layer="1"/>
-<wire x1="62.23" y1="6.35" x2="62.23" y2="36.195" width="0.254" layer="16"/>
-<wire x1="72.39" y1="36.195" x2="62.23" y2="36.195" width="0.254" layer="1"/>
-<via x="72.39" y="36.195" extent="1-16" drill="0.3302"/>
-<via x="62.23" y="36.195" extent="1-16" drill="0.3302"/>
-<via x="62.23" y="6.35" extent="1-16" drill="0.3302"/>
+<contactref element="BUFFER2" pad="12"/>
+<wire x1="74.93" y1="4.445" x2="74.93" y2="11.43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GATE8">
-<contactref element="BUFFER1" pad="4"/>
 <contactref element="GATES" pad="8"/>
-<wire x1="74.93" y1="1.905" x2="74.295" y2="1.905" width="0.254" layer="16"/>
-<wire x1="74.295" y1="1.905" x2="73.66" y2="2.54" width="0.254" layer="16"/>
-<wire x1="77.47" y1="32.385" x2="77.47" y2="27.94" width="0.254" layer="16"/>
-<wire x1="77.47" y1="27.94" x2="76.2" y2="26.67" width="0.254" layer="16"/>
-<wire x1="76.2" y1="26.67" x2="76.2" y2="15.875" width="0.254" layer="16"/>
-<wire x1="76.2" y1="15.875" x2="73.66" y2="13.335" width="0.254" layer="16"/>
-<wire x1="73.66" y1="13.335" x2="73.66" y2="2.54" width="0.254" layer="16"/>
+<contactref element="BUFFER2" pad="10"/>
+<wire x1="74.93" y1="1.905" x2="69.85" y2="11.43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+9V_1" class="1">
 <contactref element="IC11" pad="1"/>

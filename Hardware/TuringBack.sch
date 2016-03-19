@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -6317,6 +6317,9 @@ If not required, omit diodes and replace
 fuses with jumper wire. 
 Don't get it the wrong way around! 
 Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
+<text x="187.96" y="116.84" size="1.778" layer="91">NB: Bit numbers are reversed at this point: 
+Bit8 = first bit (left hand LED on main module) 
+becomes Pulse1 (Top output on expanders) </text>
 </plain>
 <instances>
 <instance part="SHIFTREG_MAIN" gate="B" x="269.24" y="251.46"/>
@@ -7293,14 +7296,14 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <label x="104.14" y="43.18" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="AND_2" gate="C" pin="O"/>
-<wire x1="226.06" y1="109.22" x2="223.52" y2="109.22" width="0.1524" layer="91"/>
-<label x="226.06" y="109.22" size="1.016" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="BUFFER2" gate="F" pin="I"/>
 <wire x1="320.04" y1="68.58" x2="325.12" y2="68.58" width="0.1524" layer="91"/>
 <label x="320.04" y="68.58" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="AND_1" gate="A" pin="O"/>
+<wire x1="271.78" y1="48.26" x2="269.24" y2="48.26" width="0.1524" layer="91"/>
+<label x="271.78" y="48.26" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PULSE2" class="0">
@@ -7310,9 +7313,9 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <label x="83.82" y="43.18" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="AND_2" gate="D" pin="O"/>
-<wire x1="228.6" y1="86.36" x2="226.06" y2="86.36" width="0.1524" layer="91"/>
-<label x="228.6" y="86.36" size="1.016" layer="95" xref="yes"/>
+<pinref part="AND_1" gate="B" pin="O"/>
+<wire x1="271.78" y1="66.04" x2="269.24" y2="66.04" width="0.1524" layer="91"/>
+<label x="271.78" y="66.04" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PULSE4" class="0">
@@ -7322,9 +7325,9 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <label x="83.82" y="45.72" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="AND_2" gate="A" pin="O"/>
-<wire x1="228.6" y1="48.26" x2="226.06" y2="48.26" width="0.1524" layer="91"/>
-<label x="228.6" y="48.26" size="1.016" layer="95" xref="yes"/>
+<pinref part="AND_1" gate="D" pin="O"/>
+<wire x1="269.24" y1="109.22" x2="266.7" y2="109.22" width="0.1524" layer="91"/>
+<label x="269.24" y="109.22" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PULSE3" class="0">
@@ -7334,9 +7337,9 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <label x="104.14" y="45.72" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="AND_2" gate="B" pin="O"/>
-<wire x1="228.6" y1="66.04" x2="226.06" y2="66.04" width="0.1524" layer="91"/>
-<label x="228.6" y="66.04" size="1.016" layer="95" xref="yes"/>
+<pinref part="AND_1" gate="C" pin="O"/>
+<wire x1="271.78" y1="86.36" x2="269.24" y2="86.36" width="0.1524" layer="91"/>
+<label x="271.78" y="86.36" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PULSE5" class="0">
@@ -7346,9 +7349,9 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <label x="104.14" y="48.26" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="AND_1" gate="D" pin="O"/>
-<wire x1="269.24" y1="109.22" x2="266.7" y2="109.22" width="0.1524" layer="91"/>
-<label x="269.24" y="109.22" size="1.016" layer="95" xref="yes"/>
+<pinref part="AND_2" gate="A" pin="O"/>
+<wire x1="228.6" y1="48.26" x2="226.06" y2="48.26" width="0.1524" layer="91"/>
+<label x="228.6" y="48.26" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PULSE6" class="0">
@@ -7358,9 +7361,9 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <label x="83.82" y="48.26" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="AND_1" gate="C" pin="O"/>
-<wire x1="271.78" y1="86.36" x2="269.24" y2="86.36" width="0.1524" layer="91"/>
-<label x="271.78" y="86.36" size="1.016" layer="95" xref="yes"/>
+<pinref part="AND_2" gate="B" pin="O"/>
+<wire x1="228.6" y1="66.04" x2="226.06" y2="66.04" width="0.1524" layer="91"/>
+<label x="228.6" y="66.04" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PULSE7" class="0">
@@ -7370,9 +7373,9 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <label x="104.14" y="50.8" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="AND_1" gate="B" pin="O"/>
-<wire x1="271.78" y1="66.04" x2="269.24" y2="66.04" width="0.1524" layer="91"/>
-<label x="271.78" y="66.04" size="1.016" layer="95" xref="yes"/>
+<pinref part="AND_2" gate="D" pin="O"/>
+<wire x1="228.6" y1="86.36" x2="226.06" y2="86.36" width="0.1524" layer="91"/>
+<label x="228.6" y="86.36" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PULSE8" class="0">
@@ -7382,9 +7385,9 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <label x="83.82" y="50.8" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="AND_1" gate="A" pin="O"/>
-<wire x1="271.78" y1="48.26" x2="269.24" y2="48.26" width="0.1524" layer="91"/>
-<label x="271.78" y="48.26" size="1.016" layer="95" xref="yes"/>
+<pinref part="AND_2" gate="C" pin="O"/>
+<wire x1="226.06" y1="109.22" x2="223.52" y2="109.22" width="0.1524" layer="91"/>
+<label x="226.06" y="109.22" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="BUFFCLK2_BACK" class="0">
@@ -7431,9 +7434,9 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <label x="53.34" y="43.18" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="BUFFER2" gate="D" pin="O"/>
-<wire x1="322.58" y1="139.7" x2="320.04" y2="139.7" width="0.1524" layer="91"/>
-<label x="322.58" y="139.7" size="1.016" layer="95" xref="yes"/>
+<pinref part="BUFFER1" gate="B" pin="O"/>
+<wire x1="373.38" y1="86.36" x2="370.84" y2="86.36" width="0.1524" layer="91"/>
+<label x="373.38" y="86.36" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GATE2" class="0">
@@ -7443,9 +7446,9 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <label x="33.02" y="43.18" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="BUFFER2" gate="E" pin="O"/>
-<wire x1="322.58" y1="121.92" x2="320.04" y2="121.92" width="0.1524" layer="91"/>
-<label x="322.58" y="121.92" size="1.016" layer="95" xref="yes"/>
+<pinref part="BUFFER1" gate="C" pin="O"/>
+<wire x1="373.38" y1="104.14" x2="370.84" y2="104.14" width="0.1524" layer="91"/>
+<label x="373.38" y="104.14" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GATE3" class="0">
@@ -7455,9 +7458,9 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <label x="53.34" y="45.72" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="BUFFER2" gate="C" pin="O"/>
-<wire x1="322.58" y1="104.14" x2="320.04" y2="104.14" width="0.1524" layer="91"/>
-<label x="322.58" y="104.14" size="1.016" layer="95" xref="yes"/>
+<pinref part="BUFFER1" gate="D" pin="O"/>
+<wire x1="373.38" y1="121.92" x2="370.84" y2="121.92" width="0.1524" layer="91"/>
+<label x="373.38" y="121.92" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GATE4" class="0">
@@ -7467,9 +7470,9 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <label x="33.02" y="45.72" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="BUFFER2" gate="B" pin="O"/>
-<wire x1="322.58" y1="86.36" x2="320.04" y2="86.36" width="0.1524" layer="91"/>
-<label x="322.58" y="86.36" size="1.016" layer="95" xref="yes"/>
+<pinref part="BUFFER1" gate="E" pin="O"/>
+<wire x1="373.38" y1="139.7" x2="370.84" y2="139.7" width="0.1524" layer="91"/>
+<label x="373.38" y="139.7" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GATE5" class="0">
@@ -7479,9 +7482,9 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <label x="53.34" y="48.26" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="BUFFER1" gate="E" pin="O"/>
-<wire x1="373.38" y1="139.7" x2="370.84" y2="139.7" width="0.1524" layer="91"/>
-<label x="373.38" y="139.7" size="1.016" layer="95" xref="yes"/>
+<pinref part="BUFFER2" gate="B" pin="O"/>
+<wire x1="322.58" y1="86.36" x2="320.04" y2="86.36" width="0.1524" layer="91"/>
+<label x="322.58" y="86.36" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GATE6" class="0">
@@ -7491,9 +7494,9 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <label x="33.02" y="48.26" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="BUFFER1" gate="D" pin="O"/>
-<wire x1="373.38" y1="121.92" x2="370.84" y2="121.92" width="0.1524" layer="91"/>
-<label x="373.38" y="121.92" size="1.016" layer="95" xref="yes"/>
+<pinref part="BUFFER2" gate="C" pin="O"/>
+<wire x1="322.58" y1="104.14" x2="320.04" y2="104.14" width="0.1524" layer="91"/>
+<label x="322.58" y="104.14" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GATE7" class="0">
@@ -7503,9 +7506,9 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <label x="53.34" y="50.8" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="BUFFER1" gate="C" pin="O"/>
-<wire x1="373.38" y1="104.14" x2="370.84" y2="104.14" width="0.1524" layer="91"/>
-<label x="373.38" y="104.14" size="1.016" layer="95" xref="yes"/>
+<pinref part="BUFFER2" gate="E" pin="O"/>
+<wire x1="322.58" y1="121.92" x2="320.04" y2="121.92" width="0.1524" layer="91"/>
+<label x="322.58" y="121.92" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GATE8" class="0">
@@ -7515,9 +7518,9 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <label x="33.02" y="50.8" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="BUFFER1" gate="B" pin="O"/>
-<wire x1="373.38" y1="86.36" x2="370.84" y2="86.36" width="0.1524" layer="91"/>
-<label x="373.38" y="86.36" size="1.016" layer="95" xref="yes"/>
+<pinref part="BUFFER2" gate="D" pin="O"/>
+<wire x1="322.58" y1="139.7" x2="320.04" y2="139.7" width="0.1524" layer="91"/>
+<label x="322.58" y="139.7" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PULSE_OUT_BACK" class="0">
