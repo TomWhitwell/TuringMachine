@@ -1956,22 +1956,43 @@ design rules under a new name.</description>
 <signal name="GATE1">
 <contactref element="GATES" pad="1"/>
 <contactref element="BUFFER1" pad="4"/>
-<wire x1="67.31" y1="4.445" x2="77.47" y2="32.385" width="0" layer="19" extent="1-1"/>
+<wire x1="77.47" y1="32.385" x2="77.47" y2="27.94" width="0.254" layer="16"/>
+<wire x1="77.47" y1="27.94" x2="76.2" y2="26.67" width="0.254" layer="16"/>
+<wire x1="76.2" y1="26.67" x2="64.77" y2="26.67" width="0.254" layer="1"/>
+<wire x1="64.77" y1="26.67" x2="64.77" y2="6.985" width="0.254" layer="16"/>
+<wire x1="64.77" y1="6.985" x2="67.31" y2="4.445" width="0.254" layer="16"/>
+<via x="76.2" y="26.67" extent="1-16" drill="0.3302"/>
+<via x="64.77" y="26.67" extent="1-16" drill="0.3302"/>
 </signal>
 <signal name="GATE2">
 <contactref element="GATES" pad="2"/>
 <contactref element="BUFFER1" pad="6"/>
-<wire x1="67.31" y1="1.905" x2="72.39" y2="32.385" width="0" layer="19" extent="1-1"/>
+<wire x1="72.39" y1="32.385" x2="72.39" y2="36.195" width="0.254" layer="16"/>
+<wire x1="72.39" y1="36.195" x2="63.5" y2="36.195" width="0.254" layer="1"/>
+<wire x1="63.5" y1="36.195" x2="63.5" y2="5.715" width="0.254" layer="16"/>
+<wire x1="63.5" y1="5.715" x2="67.31" y2="1.905" width="0.254" layer="16"/>
+<via x="72.39" y="36.195" extent="1-16" drill="0.3302"/>
+<via x="63.5" y="36.195" extent="1-16" drill="0.3302"/>
 </signal>
 <signal name="GATE3">
 <contactref element="GATES" pad="3"/>
 <contactref element="BUFFER1" pad="10"/>
-<wire x1="69.85" y1="4.445" x2="69.85" y2="24.765" width="0" layer="19" extent="1-1"/>
+<wire x1="69.85" y1="24.765" x2="69.85" y2="23.495" width="0.254" layer="16"/>
+<wire x1="69.85" y1="23.495" x2="71.12" y2="22.225" width="0.254" layer="16"/>
+<wire x1="71.12" y1="22.225" x2="71.12" y2="8.89" width="0.254" layer="16"/>
+<wire x1="71.12" y1="8.89" x2="69.85" y2="7.62" width="0.254" layer="16"/>
+<wire x1="69.85" y1="7.62" x2="69.85" y2="4.445" width="0.254" layer="16"/>
 </signal>
 <signal name="GATE4">
 <contactref element="GATES" pad="4"/>
 <contactref element="BUFFER1" pad="12"/>
-<wire x1="69.85" y1="1.905" x2="74.93" y2="24.765" width="0" layer="19" extent="1-1"/>
+<wire x1="69.85" y1="1.905" x2="71.12" y2="3.175" width="0.254" layer="16"/>
+<wire x1="71.12" y1="3.175" x2="71.12" y2="6.985" width="0.254" layer="16"/>
+<wire x1="71.12" y1="6.985" x2="73.66" y2="9.525" width="0.254" layer="16"/>
+<wire x1="73.66" y1="9.525" x2="73.66" y2="14.605" width="0.254" layer="16"/>
+<wire x1="73.66" y1="14.605" x2="76.2" y2="17.145" width="0.254" layer="16"/>
+<wire x1="76.2" y1="17.145" x2="76.2" y2="23.495" width="0.254" layer="16"/>
+<wire x1="76.2" y1="23.495" x2="74.93" y2="24.765" width="0.254" layer="16"/>
 </signal>
 <signal name="GATE5">
 <contactref element="GATES" pad="5"/>
@@ -1981,17 +2002,27 @@ design rules under a new name.</description>
 <signal name="GATE6">
 <contactref element="GATES" pad="6"/>
 <contactref element="BUFFER2" pad="6"/>
-<wire x1="72.39" y1="1.905" x2="72.39" y2="19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="72.39" y1="19.05" x2="72.39" y2="15.875" width="0.254" layer="1"/>
+<wire x1="72.39" y1="15.875" x2="73.66" y2="14.605" width="0.254" layer="1"/>
+<wire x1="73.66" y1="14.605" x2="73.66" y2="8.255" width="0.254" layer="1"/>
+<wire x1="73.66" y1="8.255" x2="73.66" y2="3.175" width="0.254" layer="16"/>
+<wire x1="73.66" y1="3.175" x2="72.39" y2="1.905" width="0.254" layer="16"/>
+<via x="73.66" y="8.255" extent="1-16" drill="0.3302"/>
 </signal>
 <signal name="GATE7">
 <contactref element="GATES" pad="7"/>
 <contactref element="BUFFER2" pad="12"/>
-<wire x1="74.93" y1="4.445" x2="74.93" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="74.93" y1="4.445" x2="74.93" y2="11.43" width="0.254" layer="16"/>
 </signal>
 <signal name="GATE8">
 <contactref element="GATES" pad="8"/>
 <contactref element="BUFFER2" pad="10"/>
-<wire x1="74.93" y1="1.905" x2="69.85" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="69.85" y1="11.43" x2="69.85" y2="9.525" width="0.254" layer="16"/>
+<wire x1="69.85" y1="9.525" x2="68.58" y2="8.255" width="0.254" layer="16"/>
+<wire x1="68.58" y1="8.255" x2="68.58" y2="1.27" width="0.254" layer="16"/>
+<wire x1="68.58" y1="1.27" x2="69.215" y2="0.635" width="0.254" layer="16"/>
+<wire x1="69.215" y1="0.635" x2="73.66" y2="0.635" width="0.254" layer="16"/>
+<wire x1="73.66" y1="0.635" x2="74.93" y2="1.905" width="0.254" layer="16"/>
 </signal>
 <signal name="+9V_1" class="1">
 <contactref element="IC11" pad="1"/>
@@ -2129,10 +2160,8 @@ design rules under a new name.</description>
 <contactref element="IC7" pad="4"/>
 <wire x1="22.5536375" y1="2.7075375" x2="22.5536375" y2="8.5613625" width="0.8128" layer="1"/>
 <wire x1="80.01" y1="1.905" x2="80.01" y2="4.445" width="0.8128" layer="16"/>
-<wire x1="80.01" y1="4.445" x2="76.835" y2="7.62" width="0.8128" layer="1"/>
-<wire x1="76.835" y1="7.62" x2="60.96" y2="7.62" width="0.8128" layer="1"/>
-<wire x1="60.96" y1="7.62" x2="60.325" y2="6.985" width="0.8128" layer="1"/>
-<wire x1="60.325" y1="6.985" x2="54.61" y2="6.985" width="0.8128" layer="1"/>
+<wire x1="80.01" y1="4.445" x2="76.835" y2="6.985" width="0.8128" layer="1"/>
+<wire x1="76.835" y1="6.985" x2="54.61" y2="6.985" width="0.8128" layer="1"/>
 <wire x1="54.61" y1="6.985" x2="54.61" y2="4.445" width="0.8128" layer="16"/>
 <wire x1="54.61" y1="4.445" x2="54.61" y2="1.905" width="0.8128" layer="1"/>
 <wire x1="54.61" y1="6.985" x2="37.465" y2="6.985" width="0.8128" layer="1"/>
