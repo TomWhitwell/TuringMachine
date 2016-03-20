@@ -6320,6 +6320,9 @@ Ferrites: 81-BL01RN1A1D2B  or 623-2743001112LF</text>
 <text x="187.96" y="116.84" size="1.778" layer="91">NB: Bit numbers are reversed at this point: 
 Bit8 = first bit (left hand LED on main module) 
 becomes Pulse1 (Top output on expanders) </text>
+<text x="312.42" y="152.4" size="1.778" layer="91">NB: Bit numbers are reversed at this point: 
+Bit8 = first bit (left hand LED on main module) 
+becomes Pulse1 (Top output on expanders) </text>
 </plain>
 <instances>
 <instance part="SHIFTREG_MAIN" gate="B" x="269.24" y="251.46"/>
