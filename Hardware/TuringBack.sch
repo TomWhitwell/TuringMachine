@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -6377,10 +6377,10 @@ becomes Pulse1 (Top output on expanders) </text>
 <instance part="LINK2" gate="1" x="157.48" y="35.56"/>
 <instance part="LINK1" gate="1" x="157.48" y="20.32"/>
 <instance part="LINK3" gate="G$1" x="157.48" y="53.34"/>
-<instance part="AND_2" gate="C" x="215.9" y="109.22"/>
+<instance part="AND_2" gate="A" x="215.9" y="109.22"/>
 <instance part="AND_2" gate="D" x="218.44" y="86.36"/>
 <instance part="AND_2" gate="B" x="218.44" y="66.04"/>
-<instance part="AND_2" gate="A" x="218.44" y="48.26"/>
+<instance part="AND_2" gate="C" x="218.44" y="48.26"/>
 <instance part="AND_1" gate="D" x="259.08" y="109.22"/>
 <instance part="AND_1" gate="C" x="261.62" y="86.36"/>
 <instance part="AND_1" gate="B" x="261.62" y="66.04"/>
@@ -6917,7 +6917,7 @@ becomes Pulse1 (Top output on expanders) </text>
 <pinref part="LINK3" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="AND_2" gate="C" pin="I0"/>
+<pinref part="AND_2" gate="A" pin="I0"/>
 <wire x1="204.47" y1="111.76" x2="208.28" y2="111.76" width="0.1524" layer="91"/>
 <label x="204.47" y="111.76" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -6983,7 +6983,7 @@ becomes Pulse1 (Top output on expanders) </text>
 <pinref part="LINK3" gate="G$1" pin="4"/>
 </segment>
 <segment>
-<pinref part="AND_2" gate="A" pin="I0"/>
+<pinref part="AND_2" gate="C" pin="I0"/>
 <wire x1="205.74" y1="50.8" x2="210.82" y2="50.8" width="0.1524" layer="91"/>
 <label x="205.74" y="50.8" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -7269,7 +7269,7 @@ becomes Pulse1 (Top output on expanders) </text>
 <label x="204.47" y="83.82" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="AND_2" gate="C" pin="I1"/>
+<pinref part="AND_2" gate="A" pin="I1"/>
 <wire x1="204.47" y1="106.68" x2="208.28" y2="106.68" width="0.1524" layer="91"/>
 <label x="204.47" y="106.68" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -7279,7 +7279,7 @@ becomes Pulse1 (Top output on expanders) </text>
 <label x="205.74" y="63.5" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="AND_2" gate="A" pin="I1"/>
+<pinref part="AND_2" gate="C" pin="I1"/>
 <wire x1="205.74" y1="45.72" x2="210.82" y2="45.72" width="0.1524" layer="91"/>
 <label x="205.74" y="45.72" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -7349,7 +7349,7 @@ becomes Pulse1 (Top output on expanders) </text>
 <label x="104.14" y="48.26" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="AND_2" gate="A" pin="O"/>
+<pinref part="AND_2" gate="C" pin="O"/>
 <wire x1="228.6" y1="48.26" x2="226.06" y2="48.26" width="0.1524" layer="91"/>
 <label x="228.6" y="48.26" size="1.016" layer="95" xref="yes"/>
 </segment>
@@ -7385,7 +7385,7 @@ becomes Pulse1 (Top output on expanders) </text>
 <label x="83.82" y="50.8" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="AND_2" gate="C" pin="O"/>
+<pinref part="AND_2" gate="A" pin="O"/>
 <wire x1="226.06" y1="109.22" x2="223.52" y2="109.22" width="0.1524" layer="91"/>
 <label x="226.06" y="109.22" size="1.016" layer="95" xref="yes"/>
 </segment>
