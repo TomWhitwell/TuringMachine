@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -8,15 +8,15 @@
 </settings>
 <grid distance="25" unitdist="mil" unit="mil" style="dots" multiple="1" display="no" altdistance="10" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="10" fill="1" visible="no" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="10" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
@@ -135,7 +135,7 @@
 <wire x1="107" y1="49.5" x2="0" y2="49.5" width="0" layer="20"/>
 <wire x1="-15.875" y1="24.75" x2="121.285" y2="24.75" width="0.05" layer="51"/>
 <text x="84.455" y="27.305" size="1.016" layer="22" font="vector" rot="SMR0">Music Thing Modular Turing Machine 
-Rev4.1  Back Board
+Rev5  Back Board
 
 
 
@@ -143,7 +143,7 @@ Designed in Herne Hill, London By Tom Whitwell
 
 
 
-March 2016 CC-BY-SA 
+August 2017 CC-BY-SA 
 musicthing.co.uk</text>
 <text x="17.907" y="17.78" size="0.762" layer="21" rot="R20" align="center">FERRITE
 BEAD</text>
@@ -2251,12 +2251,32 @@ design rules under a new name.</description>
 <contactref element="C24" pad="1"/>
 <contactref element="C25" pad="1"/>
 <contactref element="IC7" pad="3"/>
-<polygon width="0.8128" layer="16">
+<polygon width="0.8128" layer="16" isolate="0.4064">
 <vertex x="-1.905" y="50.8"/>
 <vertex x="109.855" y="50.8"/>
 <vertex x="109.855" y="-1.27"/>
 <vertex x="-1.905" y="-1.27"/>
 </polygon>
+<wire x1="13.97" y1="18.415" x2="15.24" y2="18.415" width="0.8128" layer="1"/>
+<wire x1="15.24" y1="18.415" x2="19.685" y2="13.97" width="0.8128" layer="1"/>
+<wire x1="30.48" y1="18.415" x2="32.385" y2="20.32" width="0.8128" layer="1"/>
+<wire x1="32.385" y1="20.32" x2="38.1" y2="20.32" width="0.8128" layer="1"/>
+<wire x1="38.1" y1="20.32" x2="39.37" y2="19.05" width="0.8128" layer="1"/>
+<wire x1="39.37" y1="19.05" x2="39.37" y2="17.145" width="0.8128" layer="1"/>
+<wire x1="25.4" y1="32.385" x2="27.94" y2="32.385" width="0.8128" layer="1"/>
+<wire x1="27.94" y1="32.385" x2="27.94" y2="30.48" width="0.8128" layer="1"/>
+<wire x1="27.94" y1="30.48" x2="29.21" y2="29.21" width="0.8128" layer="1"/>
+<wire x1="29.21" y1="29.21" x2="31.75" y2="29.21" width="0.8128" layer="1"/>
+<wire x1="31.75" y1="29.21" x2="33.02" y2="30.48" width="0.8128" layer="1"/>
+<wire x1="33.02" y1="30.48" x2="33.02" y2="32.385" width="0.8128" layer="1"/>
+<wire x1="80.01" y1="24.765" x2="80.01" y2="25.4" width="0.8128" layer="1"/>
+<wire x1="80.01" y1="25.4" x2="81.28" y2="26.67" width="0.8128" layer="1"/>
+<wire x1="81.28" y1="26.67" x2="86.995" y2="26.67" width="0.8128" layer="1"/>
+<wire x1="86.995" y1="26.67" x2="87.63" y2="26.035" width="0.8128" layer="1"/>
+<wire x1="80.01" y1="38.735" x2="80.01" y2="38.1" width="0.8128" layer="1"/>
+<wire x1="80.01" y1="38.1" x2="81.28" y2="36.83" width="0.8128" layer="1"/>
+<wire x1="81.28" y1="36.83" x2="86.995" y2="36.83" width="0.8128" layer="1"/>
+<wire x1="86.995" y1="36.83" x2="88.265" y2="38.1" width="0.8128" layer="1"/>
 </signal>
 <signal name="STEP_16_BACK">
 <contactref element="SHIFTREG_EXT" pad="2"/>
@@ -2477,8 +2497,8 @@ design rules under a new name.</description>
 <contactref element="SWITCH_IC" pad="2"/>
 <wire x1="7.62" y1="31.115" x2="7.62" y2="36.195" width="0.254" layer="1"/>
 <wire x1="15.24" y1="43.815" x2="15.24" y2="45.085" width="0.254" layer="16"/>
-<wire x1="15.24" y1="45.085" x2="14.605" y2="46.355" width="0.254" layer="16"/>
-<wire x1="14.605" y1="46.355" x2="7.62" y2="46.355" width="0.254" layer="16"/>
+<wire x1="15.24" y1="45.085" x2="13.97" y2="46.355" width="0.254" layer="16"/>
+<wire x1="13.97" y1="46.355" x2="7.62" y2="46.355" width="0.254" layer="16"/>
 <wire x1="7.62" y1="46.355" x2="6.35" y2="45.085" width="0.254" layer="16"/>
 <wire x1="6.35" y1="45.085" x2="6.35" y2="40.64" width="0.254" layer="16"/>
 <wire x1="6.35" y1="40.64" x2="7.62" y2="39.37" width="0.254" layer="16"/>
