@@ -15,7 +15,7 @@ The 2016 revised Turing Machine has many improvements:
 - Noise level trimmer & reduced voltage in noise circuit to make circuit more robust with different noise transistors 
 - Compatible with existing expanders 
 
-*“I am interested in perceptible processes. I want to be able to hear the process happening throughout the music.To facilitate closely detailed listening a musical process should happen extremely gradually.”* Steve Reich, Music as a Gradual Process, 1968. 
+*“I am interested in perceptible processes. I want to be able to hear the process happening throughout the music. To facilitate closely detailed listening a musical process should happen extremely gradually.”* Steve Reich, [Music as a Gradual Process](http://www.bussigel.com/systemsforplay/wp-content/uploads/2014/02/Reich_Gradual-Process.pdf), 1968. 
 
 [Schematic](https://github.com/TomWhitwell/TuringMachine/blob/master/Collateral/PDF_Schematics%20/TuringMachine2_Schematic_May2016.pdf)
 
