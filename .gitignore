@@ -1,0 +1,23 @@
+# ignore EAGLE backup files
+Hardware/*.b#*
+
+# ignore all CAM output artifacts
+Hardware/*.dri
+Hardware/*.gbl
+Hardware/*.gbo
+Hardware/*.gbp
+Hardware/*.gbs
+Hardware/*.gml
+Hardware/*.gpi
+Hardware/*.gtl
+Hardware/*.gto
+Hardware/*.gtp
+Hardware/*.gts
+
+# ignore all CAM output bundles
+Hardware/*.zip
+
+# ignore text files, but only when they're CAM output artifacts
+Hardware/TuringFront.txt
+Hardware/TuringBack.txt
+Hardware/TuringPanel.txt
