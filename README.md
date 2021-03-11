@@ -17,7 +17,7 @@ The 2016 revised Turing Machine has many improvements:
 
 *“I am interested in perceptible processes. I want to be able to hear the process happening throughout the music. To facilitate closely detailed listening a musical process should happen extremely gradually.”* Steve Reich, [Music as a Gradual Process](http://www.bussigel.com/systemsforplay/wp-content/uploads/2014/02/Reich_Gradual-Process.pdf), 1968. 
 
-[Schematic](https://github.com/TomWhitwell/TuringMachine/blob/master/Collateral/PDF_Schematics%20/TuringMachine2_Schematic_May2016.pdf)
+[Schematic](https://github.com/TomWhitwell/TuringMachine/blob/master/Collateral/PDF%20Schematics/TuringMachine2_Schematic_May2016.pdf)
 
 Status:   
 April 2016: Design files and Gerbers tested and prototyped successfully 
